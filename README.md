@@ -18,6 +18,7 @@ Anissa est en plein démarchage pour ce projet, auprès des restaurateurs. Elle 
 >Vous décidez alors, avec l’équipe, que le site contiendra 4 menus dans un premier temps. Voici le brief que vous établissez avec le CTO, Paul.
 
 De retour à votre bureau, vous trouvez un post-it de Fanny.
+
 **Voici un lien vers le brief créatif :** 
 [Brief](src/brief.pdf)
 
