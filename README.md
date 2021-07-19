@@ -20,7 +20,7 @@ Anissa est en plein démarchage pour ce projet, auprès des restaurateurs. Elle 
 De retour à votre bureau, vous trouvez un post-it de Fanny.
 
 **Voici un lien vers le brief créatif :** 
-[Brief](src/brief.pdf)
+[Brief](https://github.com/Sam2Lowry/ohmyfood/blob/main/src/Brief.pdf)
 
 Vous trouvez les maquettes du site dans votre boîte mail, envoyées par Fanny.
 
