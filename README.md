@@ -19,7 +19,9 @@ Anissa est en plein démarchage pour ce projet, auprès des restaurateurs. Elle 
 De retour à votre bureau, vous trouvez un post-it de Fanny.
 
 Vous trouvez les maquettes du site dans votre boîte mail, envoyées par Fanny.
+
 ![Maquette accueil fanny](src/maquettes/Accueil.png)
+
 ![Maquette menu fanny](src/maquettes/Menu.png)
 
 **Voici un lien vers le brief créatif :** 
