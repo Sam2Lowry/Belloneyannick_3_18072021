@@ -1,14 +1,19 @@
-a {text-decoration: none; }
-a:hover{text-decoration: underline; }
-
-*, 
-*::before, 
-*::after {
-    box-sizing: border-box;
+a {
+  text-decoration: none;
 }
+// # // formalistion des liens
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} // # // pour éviter les soucis de bordures à recalculer
 
 $colors: (
-    primary: hsl(267,66%,60%), // # // purple dark
-    secondary: hsl(317,100%,74%), // # // pink dark
-    tertiary: hsl(165,56%,74%), // # // ligth green
+  primary: hsl(267, 66%, 60%),
+  // # // purple dark
+  secondary: hsl(317, 100%, 74%),
+  // # // pink dark
+  tertiary: hsl(165, 56%, 74%),
+  // # // ligth green
 );

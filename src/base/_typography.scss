@@ -1,8 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 
-
-$heading-font-family: 'shrikhand', sans-serif;
-$body-font-family: 'Roboto', sans-serif;
-$base-font-size: 1em;
+$heading-font-family: "shrikhand", sans-serif; // # // logo and title
+$body-font-family: "Roboto", sans-serif; // # // Textes
+$base-font-size: clamp(100%, 1rem + 2vw, 24px);
 $base-font-weight: 400;
+$ratio: 1.2; // # // Need to be ajusted if needed !!!
+
+/* Calculate values */
+$h4: $font-size * $ratio;
+$h3: $h4 * $ratio;
+$h2: $h3 * $ratio;
+$h1: $h2 * $ratio;
+
+/* clamp(100%, 1rem + 2vw, 24px);*/
+
+*, body {
+    font-size: $base-font-size;
+    font-family: $body-font-family;
+    line-height: 1.5;
+}
+
+p,
+li,
+h1,
+h2,
+h3,
+h4 {
+    overflow-wrap: break-word;
+}
