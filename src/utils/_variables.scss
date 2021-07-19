@@ -1,0 +1,14 @@
+a {text-decoration: none; }
+a:hover{text-decoration: underline; }
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+$colors: (
+    primary: hsl(267,66%,60%), // # // purple dark
+    secondary: hsl(317,100%,74%), // # // pink dark
+    tertiary: hsl(165,56%,74%), // # // ligth green
+);
