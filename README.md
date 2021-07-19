@@ -10,7 +10,7 @@ L’équipe se compose de :
 * Fanny, l’UX designer recrutée pour mettre le site aux couleurs de Paris ;
 * Anissa, commerciale chargée de démarcher les restaurants ;
 * et vous, chargé du développement du site.
-* 
+ 
 Anissa est en plein démarchage pour ce projet, auprès des restaurateurs. Elle vous interpelle à la machine à café :
 *Tu connais pas la nouvelle ? Tu te rappelles le responsable commercial de ton resto préféré ? J’ai réussi à le convaincre, avec 3 autres, de déposer leurs cartes en ligne ! Je t’envoie le dossier avec les 4 menus dans l’après-midi. À toi de jouer, maintenant !*
 
