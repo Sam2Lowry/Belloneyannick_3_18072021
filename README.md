@@ -1,8 +1,8 @@
-Projet de la mission :
+#Projet de la mission :
 
-Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la restauration. L'objectif est de développer un site 100% mobile qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant !
+##**Ohmyfood!** est une jeune startup qui voudrait s'imposer sur le marché de la restauration. L'objectif est de développer un *site 100% mobile* qui répertorie les menus de restaurants gastronomiques. En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant !
 
-Vous faites partie des 4 heureux élus qui ont la chance de travailler sur ce beau projet.
+#Vous faites partie des 4 heureux élus qui ont la chance de travailler sur ce beau projet.
 
 L’équipe se compose de :
 
@@ -12,10 +12,15 @@ Anissa, commerciale chargée de démarcher les restaurants ;
 et vous, chargé du développement du site.
 Anissa est en plein démarchage pour ce projet, auprès des restaurateurs. Elle vous interpelle à la machine à café :
 
-Tu connais pas la nouvelle ? Tu te rappelles le responsable commercial de ton resto préféré ? J’ai réussi à le convaincre, avec 3 autres, de déposer leurs cartes en ligne ! Je t’envoie le dossier avec les 4 menus dans l’après-midi. À toi de jouer, maintenant !
+*Tu connais pas la nouvelle ? Tu te rappelles le responsable commercial de ton resto préféré ? J’ai réussi à le convaincre, avec 3 autres, de déposer leurs cartes en ligne ! Je t’envoie le dossier avec les 4 menus dans l’après-midi. À toi de jouer, maintenant !*
 
-Vous décidez alors, avec l’équipe, que le site contiendra 4 menus dans un premier temps. Voici le brief que vous établissez avec le CTO, Paul.
+>Vous décidez alors, avec l’équipe, que le site contiendra 4 menus dans un premier temps. Voici le >brief que vous établissez avec le CTO, Paul.
 
 De retour à votre bureau, vous trouvez un post-it de Fanny.
 
 Vous trouvez les maquettes du site dans votre boîte mail, envoyées par Fanny.
+![Maquette accueil fanny](src/maquettes/Accueil.png)
+![Maquette menu fanny](src/maquettes/Menu.png)
+
+**Voici un lien vers le brief créatif :** 
+[Brief](src/brief.pdf)
