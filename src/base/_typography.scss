@@ -7,13 +7,6 @@ $base-font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 $base-font-weight: 400;
 $ratio: 1.2; // # // Need to be ajusted if needed !!!
 
-/* Calculate values */
-$h4: $font-size * $ratio;
-$h3: $h4 * $ratio;
-$h2: $h3 * $ratio;
-$h1: $h2 * $ratio;
-
-/* clamp(100%, 1rem + 2vw, 24px);*/
 
 *,
 body {
