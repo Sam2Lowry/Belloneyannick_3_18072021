@@ -1,11 +1,11 @@
-$colors: (
-  primary: hsl(267, 66%, 60%),
+
+  $color-primary: hsl(267, 66%, 60%);
   // # // purple dark
-  secondary: hsl(317, 100%, 74%),
+  $color-secondary: hsl(317, 100%, 74%);
   // # // pink dark
-  tertiary: hsl(165, 56%, 74%),
+  $color-tertiary: hsl(165, 56%, 74%);
   // # // ligth green
-);
+
 
 $color-link: hsl(0, 0%, 0%)  ;
 $color-link-hover: hsl(0, 0%, 0%) ;

@@ -6,5 +6,7 @@ a {
   *,
   *::before,
   *::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   } // # // pour éviter les soucis de bordures à recalculer

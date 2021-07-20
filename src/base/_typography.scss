@@ -7,7 +7,6 @@ $base-font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 $base-font-weight: 400;
 $ratio: 1.2; // # // Need to be ajusted if needed !!!
 
-
 *,
 body {
   font-size: 1rem;
@@ -23,4 +22,14 @@ h2,
 h3,
 h4 {
   overflow-wrap: break-word;
+}
+
+/*heart animation formating*/
+.fa-heart {
+  font-size: 10rem;
+  position: relative;
+  z-index: 2;
+  &:hover {
+    opacity: 0;;
+  }
 }

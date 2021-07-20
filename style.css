@@ -17,6 +17,16 @@ h4 {
   overflow-wrap: break-word;
 }
 
+/*heart animation formating*/
+.fa-heart {
+  font-size: 10rem;
+  position: relative;
+  z-index: 2;
+}
+.fa-heart:hover {
+  opacity: 0;
+}
+
 /* Slightly lighten or darken a color
 @access public
 @param {Color} $color - color to tint or darken
@@ -29,6 +39,8 @@ a {
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
