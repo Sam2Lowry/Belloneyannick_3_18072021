@@ -1,0 +1,10 @@
+a {
+    text-decoration: none;
+  }
+  // # // formalistion des liens
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  } // # // pour éviter les soucis de bordures à recalculer
