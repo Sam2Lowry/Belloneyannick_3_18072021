@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <meta name="title" content="Chez "La palette du goût" - Ohmyfood!" />
+    <meta name="title" content="Chez La palette du goût - Ohmyfood!" />
     <meta
       name="description"
       content="Ohmyfood! est une entreprise de commande de repas en ligne.Le concept est de vous permettre de composer vos propres menus en toute liberté pour éviter les temps d'attente incessants"
@@ -29,11 +29,72 @@
     ></script>
   </head>
   <body>
+    <!-- HEADER AVEC RETOUR INDEX -->
     <header class="header--back">
       <a href="./index.html"><i class="fas fa-arrow-left header__arrow"></i></a>
-      <h1 class="header__title">ohmfood</h1>
+      <h1 class="header__title">ohmyfood</h1>
     </header>
 
+    <!-- BANDEAU IMAGE -->
+    <img
+      src="/src/images/restaurants/la_palette_du_gout.jpg"
+      alt="À la française"
+      class="hero--img"
+    />
+
+    <!-- MENU ET 3 SOUS-MENU -->
+    <main class="menu--list">
+      <header class="menu--list__header">
+        <h2 class="menu__title">La palette du goût</h2>
+        <button class="menu__like">
+          <div class="fav--heart">
+            <div class="heart--empty">
+              <i class="far fa-2x fa-heart heart--black" aria-hidden="true"></i>
+            </div>
+            <div class="heart--full">
+              <i class="fas fa-2x fa-heart heart--color" aria-hidden="true"></i>
+            </div>
+          </div>
+        </button>
+      </header>
+
+      <!-- BLOC SOUS MENU -->
+      <div class="submenu--list">
+
+        <!-- TROIS SOUS-GROUPES -->
+
+        <div class="submenu--list__1">
+          <h3 class="title">ENTRÉES</h3>
+          <section class="anim--delay__x">BTN BTN BTN</section>
+        </div>
+        <div class="submenu--list__1">
+          <h3 class="title">PLATS</h3>
+          <section class="anim--delay__y">BTN BTN BTN</section>
+        </div>
+        <div class="submenu--list__1">
+          <h3 class="title">DESSERTS</h3>
+          <section class="anim--delay__z">BTN BTN BTN</section>
+        </div>
+
+        <!-- BOUTON POUR COMMANDER -->
+        <button class="menu--list__btn">Commander</button>
+      </div>
+
+      <!-- SVG GRADIENT HEART-->
+      <svg width="0" height="0">
+        <linearGradient id="lgrad" x1="100%" y1="100%" x2="0%" y2="0%">
+          <stop
+            offset="0%"
+            style="stop-color: rgb(146, 86, 220); stop-opacity: 1"
+          />
+          <stop
+            offset="100%"
+            style="stop-color: rgb(255, 122, 217); stop-opacity: 1"
+          />
+        </linearGradient>
+      </svg>
+    </main>
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
         <span class="footer__title">ohmyfood</span>
