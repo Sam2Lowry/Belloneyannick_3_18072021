@@ -29,11 +29,66 @@
     ></script>
   </head>
   <body>
+    <!-- HEADER AVEC RETOUR INDEX -->
     <header class="header--back">
       <a href="./index.html"><i class="fas fa-arrow-left header__arrow"></i></a>
       <h1 class="header__title">ohmfood</h1>
     </header>
-
+    <!-- BANDEAU IMAGE -->
+    <img
+      src="/src/images/restaurants/a_la_francaise.jpg"
+      alt="À la française"
+      class="hero--img"
+    />
+    <!-- MENU ET 3 SOUS-MENU -->
+    <main class="menu--list">
+      <header class="menu--list__header">
+        <h2 class="menu__title">À la française</h2>
+        <button class="menu__like">
+          <div class="fav--heart">
+            <div class="heart--empty">
+              <i class="far fa-2x fa-heart heart--black" aria-hidden="true"></i>
+            </div>
+            <div class="heart--full">
+              <i class="fas fa-2x fa-heart heart--color" aria-hidden="true"></i>
+            </div>
+          </div>
+        </button>
+      </header>
+      <!-- TROIS SOUS-GROUPES -->
+      <div class="submenu--list">
+        <div class="submenu--list__1">
+          <h3 class="title">ENTRÉES</h3>
+          BTN BTN BTN
+        </div>
+      </div>
+      <div class="submenu--list__2">
+        <h3 class="title">ENTRÉES</h3>
+        BTN BTN BTN 
+      </div>
+    </div>
+    <div class="submenu--list__3">
+      <h3 class="title">ENTRÉES</h3>
+      BTN BTN BTN
+    </div>
+    <!-- BOUTON POUR COMMANDER -->
+    <button class="menu--list__btn">Commander</button>
+  </div>
+      <!-- SVG GRADIENT HEART-->
+      <svg width="0" height="0">
+        <linearGradient id="lgrad" x1="100%" y1="100%" x2="0%" y2="0%">
+          <stop
+            offset="0%"
+            style="stop-color: rgb(146, 86, 220); stop-opacity: 1"
+          />
+          <stop
+            offset="100%"
+            style="stop-color: rgb(255, 122, 217); stop-opacity: 1"
+          />
+        </linearGradient>
+      </svg>
+    </main>
+    <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
         <span class="footer__title">ohmyfood</span>
