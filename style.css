@@ -17,20 +17,6 @@ h4 {
   overflow-wrap: break-word;
 }
 
-/*heart animation formating*/
-.fa-heart {
-  font-size: 10rem;
-  position: relative;
-}
-.fa-heart:hover {
-  color: red;
-}
-
-/* Slightly lighten or darken a color
-@access public
-@param {Color} $color - color to tint or darken
-@param {Number} $percentage - percentage of `$color` in returned color
-@return {Color} */
 a {
   text-decoration: none;
 }
