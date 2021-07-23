@@ -28,8 +28,7 @@ h4 {
 .fa-heart {
   font-size: 10rem;
   position: relative;
-  z-index: 2;
-  &:hover {
-    opacity: 0;;
+    &:hover {
+    color: red;
   }
 }

@@ -21,10 +21,9 @@ h4 {
 .fa-heart {
   font-size: 10rem;
   position: relative;
-  z-index: 2;
 }
 .fa-heart:hover {
-  opacity: 0;
+  color: red;
 }
 
 /* Slightly lighten or darken a color

@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass":"sass --watch styles.scss:../style.css"
+    "sass": "sass --watch styles.scss:../style.css",
+    "prefix": "postcss ../style.css --use autoprefixer -d ../prefixed/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "devDependencies": {
     "sass": "^1.35.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.1"
   }
 }
