@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chez La note enchantée - Ohmyfood!</title>
+    <meta name="title" content="Chez La note enchantée - Ohmyfood!" />
+    <meta
+      name="description"
+      content="Ohmyfood! est une entreprise de commande de repas en ligne.Le concept est de vous permettre de composer vos propres menus en toute liberté pour éviter les temps d'attente incessants"
+    />
+    <!-- Open graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="#" />
+    <meta
+      property="og:title"
+      content="ohmyfood - Au bon remugle ! Servi vite et encore tiède !"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.ohmyfood.com/miam_du_remugle"
+    />
+    <meta property="og:image" content="src/images/remugle.png" />
+    <script
+      src="https://kit.fontawesome.com/30c3931934.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- HEADER AVEC RETOUR INDEX -->
+    <header class="header--back">
+      <a href="./index.html"><i class="fas fa-arrow-left header__arrow"></i></a>
+      <h1 class="header__title">ohmyfood</h1>
+    </header>
+
+    <!-- BANDEAU IMAGE -->
+    <img
+      src="/src/images/restaurants/la_note_enchantee.jpg"
+      alt="La note enchantée"
+      class="hero--img"
+    />
+
+    <!-- MENU ET 3 SOUS-MENU -->
+    <main class="menu--list">
+      <header class="menu--list__header">
+        <h2 class="menu__title">La note enchantée</h2>
+         <!-- <button class="menu__like"> -->
+          <div class="fav--heart">
+            <div class="heart--empty">
+              <i class="far fa-2x fa-heart heart--black" aria-hidden="true"></i>
+            </div>
+            <div class="heart--full">
+              <i class="fas fa-2x fa-heart heart--color" aria-hidden="true"></i>
+            </div>
+          </div>
+        <!-- </button> -->
+      </header>
+
+      <!-- BLOC SOUS MENU -->
+      <div class="submenu--list">
+        <!-- TROIS SOUS-GROUPES -->
+
+        <div class="submenu--list__1">
+          <!-- ENTREES -->
+          <h3 class="title">ENTRÉES</h3>
+          <section class="anim--delay__x">
+            <div class="card">
+              <div class="textContainer">
+                <h4>Ravioles de foie gras</h4>
+                <div class="desc">
+                  <p>Accompagnés de leur crème à la truffe</p>
+                  <span class="price">25€</span>
+                </div>
+              </div>
+              <label for="Ravioles" class="checkbox">
+                <input type="checkbox" class="custom-checkbox" id="Ravioles" />
+                <span class="custom-checkbox-icon"></span>
+              </label>
+            </div>
+            <div class="card">
+              <div class="textContainer">
+                <h4>Caviar osciètre</h4>
+                <div class="desc">
+                  <p>Sur blini à la farine de blé noir</p>
+                  <span class="price">35€</span>
+                </div>
+              </div>
+              <label for="Caviar" class="checkbox">
+                <input type="checkbox" class="custom-checkbox" id="Caviar" />
+                <span class="custom-checkbox-icon"></span>
+              </label>
+            </div>
+            <div class="card">
+              <div class="textContainer">
+                <h4>Homard et espuma de potiron</h4>
+                <div class="desc">
+                  <p>Mariné aux zestes d'orange</p>
+                  <span class="price">20€</span>
+                </div>
+              </div>
+              <label for="Homard" class="checkbox">
+                <input type="checkbox" class="custom-checkbox" id="Homard" />
+                <span class="custom-checkbox-icon"></span>
+              </label>
+            </div>
+          </section>
+        </div>
+        <div class="card">
+          <div class="textContainer">
+            <h4>Foie gras de canard cuit entier</h4>
+            <div class="desc">
+              <p>Confiture de figue et pain toasté</p>
+              <span class="price">35€</span>
+            </div>
+          </div>
+          <label for="Foie" class="checkbox">
+            <input type="checkbox" class="custom-checkbox" id="Foie" />
+            <span class="custom-checkbox-icon"></span>
+          </label>
+        </div>
+      </div>
+      <div class="submenu--list__1">
+        <!-- PLATS -->
+        <h3 class="title">PLATS</h3>
+        <section class="anim--delay__y">
+          <div class="card">
+            <div class="textContainer">
+              <h4>Noix de coquilles Saint-Jacques</h4>
+              <div class="desc">
+                <p>Sur lit de purée de céleri-rave</p>
+                <span class="price">40€</span>
+              </div>
+            </div>
+            <label for="Noix" class="checkbox">
+              <input type="checkbox" class="custom-checkbox" id="Noix" />
+              <span class="custom-checkbox-icon"></span>
+            </label>
+          </div>
+
+          <div class="card">
+            <div class="textContainer">
+              <h4>Langoustine poêlée</h4>
+              <div class="desc">
+                <p>Purée de patate douce</p>
+                <span class="price">35€</span>
+              </div>
+            </div>
+            <label for="Langoustine" class="checkbox">
+              <input type="checkbox" class="custom-checkbox" id="Langoustine" />
+              <span class="custom-checkbox-icon"></span>
+            </label>
+          </div>
+
+          <div class="card">
+            <div class="textContainer">
+              <h4>Mijoté de queue de boeuf</h4>
+              <div class="desc">
+                <p>Et riz sauvage aux zestes de citron</p>
+                <span class="price">44€</span>
+              </div>
+            </div>
+            <label for="Mijote" class="checkbox">
+              <input type="checkbox" class="custom-checkbox" id="Mijote" />
+              <span class="custom-checkbox-icon"></span>
+            </label>
+          </div>
+        </section>
+      </div>
+      <div class="submenu--list__1">
+        <!-- DESSERTS -->
+        <h3 class="title">DESSERTS</h3>
+        <section class="anim--delay__z">
+          <div class="card">
+            <div class="textContainer">
+              <h4>Macaron noisette et chocolat</h4>
+              <div class="desc">
+                <p>Glace au caramel brun et sel de Guérande</p>
+                <span class="price">18€</span>
+              </div>
+            </div>
+            <label for="Macaron" class="checkbox">
+              <input type="checkbox" class="custom-checkbox" id="Macaron" />
+              <span class="custom-checkbox-icon"></span>
+            </label>
+          </div>
+
+          <div class="card">
+            <div class="textContainer">
+              <h4>Baba au rhum revisité</h4>
+              <div class="desc">
+                <p>Avec son coulis de citron</p>
+                <span class="price">22€</span>
+              </div>
+            </div>
+            <label for="Baba" class="checkbox">
+              <input type="checkbox" class="custom-checkbox" id="Baba" />
+              <span class="custom-checkbox-icon"></span>
+            </label>
+          </div>
+
+          <div class="card">
+            <div class="textContainer">
+              <h4>Tarte au citron meringuée</h4>
+              <div class="desc">
+                <p>Déstructurée</p>
+                <span class="price">23€</span>
+              </div>
+            </div>
+            <label for="Tarte" class="checkbox">
+              <input type="checkbox" class="custom-checkbox" id="Tarte" />
+              <span class="custom-checkbox-icon"></span>
+            </label>
+          </div>
+        </section>
+      </div>
+
+      <!-- BOUTON POUR COMMANDER -->
+      <button class="menu--list__btn">Commander</button>
+
+      <!-- SVG GRADIENT HEART-->
+      <svg width="0" height="0">
+        <linearGradient id="lgrad" x1="100%" y1="100%" x2="0%" y2="0%">
+          <stop
+            offset="0%"
+            style="stop-color: rgb(146, 86, 220); stop-opacity: 1"
+          />
+          <stop
+            offset="100%"
+            style="stop-color: rgb(255, 122, 217); stop-opacity: 1"
+          />
+        </linearGradient>
+      </svg>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <span class="footer__title">ohmyfood</span>
+        <ul class="footer__list">
+          <li class="footer__list__elmt">
+            <a class="footer__link" href="#"
+              ><i class="footer__icon fas fa-utensils"></i>Proposer un
+              restaurant</a
+            >
+          </li>
+          <li class="footer__list__elmt">
+            <a class="footer__link" href="#"
+              ><i class="footer__icon fas fa-hands-helping"></i>Devenir
+              partenaire</a
+            >
+          </li>
+          <li class="footer__list__elmt">
+            <a class="footer__link" href="#">Mentions légales</a>
+          </li>
+          <li class="footer__list__elmt">
+            <a class="footer__link" href="mailto:nomnomnom@ohmyfood.com"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

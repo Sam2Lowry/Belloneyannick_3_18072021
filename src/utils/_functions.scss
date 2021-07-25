@@ -5,3 +5,9 @@
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);
 }
+
+    /* Slightly lighten or darken a color
+    @access public
+    @param {Color} $color - color to tint or darken
+    @param {Number} $percentage - percentage of `$color` in returned color
+    @return {Color} */
