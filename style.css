@@ -29,11 +29,6 @@ a:visited {
   color: inherit;
 }
 
-.rest--card {
-  display: flex;
-  width: 90vw;
-  height: 25vh;
-}
 .header {
   width: 100%;
 }

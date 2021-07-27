@@ -1,7 +1,6 @@
 @use '../utils/variables' as v;
 @use '../utils/mixins' as m;
 @use '../utils/functions' as f;
-@use '../components/card';
 @use '../base/typography';
 
 .header {
@@ -70,9 +69,9 @@
     display: grid;
   }
 }
-.rest--card {
-  @extend %rest--card;
-}
+
+
+
 .footer {
   display: flex;
   background-color: f.shade(v.$grey, 80%);
