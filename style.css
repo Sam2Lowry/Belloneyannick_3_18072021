@@ -101,9 +101,22 @@ a:visited {
 }
 
 .footer {
+  display: flex;
   background-color: #1a1a1a;
   padding: 1.2rem;
   color: white;
+}
+.footer__title {
+  font-family: "shrikhand";
+}
+.footer__icon {
+  padding-right: 0.5rem;
+}
+.footer__list {
+  margin-top: 0.8rem;
+  list-style-type: none;
+  font-weight: normal;
+  line-height: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

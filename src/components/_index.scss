@@ -2,6 +2,7 @@
 @use '../utils/mixins' as m;
 @use '../utils/functions' as f;
 @use '../components/card';
+@use '../base/typography';
 
 .header {
   width: 100%;
@@ -72,8 +73,21 @@
 .rest--card {
   @extend %rest--card;
 }
-.footer{
-  background-color:f.shade(v.$grey, 80%) ;
+.footer {
+  display: flex;
+  background-color: f.shade(v.$grey, 80%);
   padding: v.$padding * 1.2;
   color: white;
+  &__title {
+    font-family: "shrikhand";
+  }
+  &__icon {
+    padding-right: v.$padding * 0.5;
+  }
+  &__list {
+    margin-top: v.$padding * 0.8;
+    list-style-type: none;
+    font-weight: normal;
+    line-height: 1rem;
+  }
 }
