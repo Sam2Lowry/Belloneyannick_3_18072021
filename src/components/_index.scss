@@ -1,0 +1,36 @@
+@use '../utils/variables' as v;
+
+.header {
+  width: 100%;
+
+  &:after {
+    content: "";
+    display: block;
+    width: auto;
+    border-bottom: 2px solid v.$dark-grey;
+    padding-bottom: v.$padding * 0.5;
+  }
+
+  &__logo {
+    display: flex;
+    width: auto;
+    height: 2rem;
+    justify-content: center;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.geoloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  background-color: v.$light-grey;
+  &__icon {
+    padding-right: v.$padding;
+  }
+  
+}

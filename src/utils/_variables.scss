@@ -1,12 +1,19 @@
+$color-primary: hsl(267, 66%, 60%);
+// # // purple dark
+$color-secondary: hsl(317, 100%, 74%);
+// # // pink dark
+$color-tertiary: hsl(165, 56%, 74%);
+// # // ligth green
 
-  $color-primary: hsl(267, 66%, 60%);
-  // # // purple dark
-  $color-secondary: hsl(317, 100%, 74%);
-  // # // pink dark
-  $color-tertiary: hsl(165, 56%, 74%);
-  // # // ligth green
+$dark-grey: #d2d2d2;
+$light-grey: #eaeaea;
 
+$color-link: hsl(0, 0%, 0%);
+$color-link-hover: hsl(0, 0%, 0%);
+$color-visited: hsl(0, 0%, 0%);
 
-$color-link: hsl(0, 0%, 0%)  ;
-$color-link-hover: hsl(0, 0%, 0%) ;
-$color-visited: hsl(0, 0%, 0%)  ;
+// # // Dark grey underline
+$dark--underline: 2px solid $dark-grey;
+
+//#// Padding 
+$padding: 1rem;

@@ -21,4 +21,35 @@ body {
   box-sizing: border-box;
 }
 
+.header {
+  width: 100%;
+}
+.header:after {
+  content: "";
+  display: block;
+  width: auto;
+  border-bottom: 2px solid #d2d2d2;
+  padding-bottom: 0.5rem;
+}
+.header__logo {
+  display: flex;
+  width: auto;
+  height: 2rem;
+  justify-content: center;
+}
+.header__logo img {
+  object-fit: cover;
+}
+
+.geoloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  background-color: #eaeaea;
+}
+.geoloc__icon {
+  padding-right: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
