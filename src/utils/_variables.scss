@@ -5,15 +5,15 @@ $color-secondary: hsl(317, 100%, 74%);
 $color-tertiary: hsl(165, 56%, 74%);
 // # // ligth green
 
-$dark-grey: #d2d2d2;
-$light-grey: #eaeaea;
+$grey: hsl(0,0%,50%);
+
 
 $color-link: hsl(0, 0%, 0%);
 $color-link-hover: hsl(0, 0%, 0%);
 $color-visited: hsl(0, 0%, 0%);
 
 // # // Dark grey underline
-$dark--underline: 2px solid $dark-grey;
+$dark--underline: 2px solid $grey;
 
 //#// Padding 
 $padding: 1rem;

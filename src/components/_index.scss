@@ -1,4 +1,7 @@
 @use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+@use '../utils/functions' as f;
+@use '../components/card';
 
 .header {
   width: 100%;
@@ -7,15 +10,15 @@
     content: "";
     display: block;
     width: auto;
-    border-bottom: 2px solid v.$dark-grey;
+    border-bottom: 3px solid f.tint(v.$grey, 50%);
     padding-bottom: v.$padding * 0.5;
   }
 
   &__logo {
     display: flex;
+    justify-content: center;
     width: auto;
     height: 2rem;
-    justify-content: center;
 
     img {
       object-fit: cover;
@@ -24,13 +27,53 @@
 }
 
 .geoloc {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include m.center-this;
   height: 2.5rem;
-  background-color: v.$light-grey;
+  background-color: f.tint(v.$grey, 70%);
   &__icon {
     padding-right: v.$padding;
   }
-  
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-color: f.tint(v.$grey, 90%);
+  &__title {
+    text-align: center;
+  }
+  &__sub {
+    text-align: center;
+  }
+  &__btn {
+    align-self: center;
+  }
+}
+
+.guide {
+  display: flex;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding-left: v.$padding * 1.5;
+  }
+}
+
+.restaurants {
+  background-color: f.tint(v.$grey, 90%);
+  padding: v.$padding;
+  &__title {
+    padding-bottom: v.$padding * 1.2;
+  }
+  &__grid {
+    display: grid;
+  }
+}
+.rest--card {
+  @extend %rest--card;
+}
+.footer{
+  background-color:f.shade(v.$grey, 80%) ;
+  padding: v.$padding * 1.2;
+  color: white;
 }
