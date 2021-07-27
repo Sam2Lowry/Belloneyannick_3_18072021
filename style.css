@@ -29,6 +29,19 @@ a:visited {
   color: inherit;
 }
 
+.restaurants .rest--card {
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .rest--card__img {
+  object-fit: cover;
+  width: 200px;
+  height: 150px;
+}
+.restaurants .rest--card__imgcontainer {
+  width: 300px;
+}
+
 .header {
   width: 100%;
 }
@@ -84,15 +97,27 @@ a:visited {
   padding-left: 1.5rem;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .restaurants {
   background-color: #f2f2f2;
+  margin: auto;
   padding: 1rem;
+  width: 80%;
 }
 .restaurants__title {
   padding-bottom: 1.2rem;
 }
 .restaurants__grid {
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  justify-items: center;
+  align-items: center;
 }
 
 .footer {

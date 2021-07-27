@@ -1,0 +1,15 @@
+%rest--card {
+  .rest--card {
+    display: flex;
+    flex-direction: column;
+    &__img{
+        object-fit: cover;
+        width: 200px;
+        height: 150px;
+    }
+    &__imgcontainer {
+    width: 300px;
+    
+    }
+  }
+}
