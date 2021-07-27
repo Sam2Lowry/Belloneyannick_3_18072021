@@ -2,14 +2,30 @@
   .rest--card {
     display: flex;
     flex-direction: column;
-    &__img{
-        object-fit: cover;
-        width: 200px;
-        height: 150px;
-    }
-    &__imgcontainer {
-    width: 300px;
     
+    
+    &__img{
+        // display: block;
+       object-fit: cover;
+        width:100%;
+        height: 100%;
     }
+   &__imgcontainer {
+       position: relative;
+       overflow: hidden;
+       height: 100%;
+       max-height: 300px;
+       
+      //  object-position: center center;
+   }
+   &__desc {
+     display: flex;
+     flex-direction: column;
+   }
+   &__fig {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+   }
   }
 }

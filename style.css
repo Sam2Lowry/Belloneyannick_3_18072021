@@ -35,11 +35,23 @@ a:visited {
 }
 .restaurants .rest--card__img {
   object-fit: cover;
-  width: 200px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
 }
 .restaurants .rest--card__imgcontainer {
-  width: 300px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-height: 300px;
+}
+.restaurants .rest--card__desc {
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .rest--card__fig {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .header {
@@ -97,17 +109,9 @@ a:visited {
   padding-left: 1.5rem;
 }
 
-.container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 .restaurants {
   background-color: #f2f2f2;
-  margin: auto;
   padding: 1rem;
-  width: 80%;
 }
 .restaurants__title {
   padding-bottom: 1.2rem;
@@ -115,9 +119,13 @@ a:visited {
 .restaurants__grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
-  justify-items: center;
-  align-items: center;
+  grid-template-rows: repeat(4, 300px);
+}
+.restaurants .container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
 }
 
 .footer {
