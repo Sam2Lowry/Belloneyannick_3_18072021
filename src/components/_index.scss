@@ -43,19 +43,17 @@
   display: flex;
   flex-direction: column;
   background-color: f.tint(v.$grey, 90%);
-  
+
   &__title {
     text-align: center;
   }
   &__sub {
     text-align: center;
     font-size: smaller;
-
   }
   &__btn {
     align-self: center;
     font-size: smaller;
-  
   }
 }
 
@@ -64,7 +62,7 @@
   &__container {
     display: flex;
     flex-direction: column;
-    padding-left: v.$padding * 1.5;
+    margin: auto;
   }
 }
 
