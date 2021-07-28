@@ -20,12 +20,12 @@
 // # // Animation bandeau nouveauté
 
 .rest--card__new--rest {
-  animation: blink 1.3s ease-in-out reverse infinite;
+  animation: blink 1.5s ease-in-out reverse infinite;
 }
 
 @keyframes blink {
   to {
-    opacity: 0.1;
+    opacity: 0.3;
   }
 }
 

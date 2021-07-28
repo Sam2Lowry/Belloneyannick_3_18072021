@@ -119,12 +119,12 @@ body {
   }
 }
 .rest--card__new--rest {
-  animation: blink 1.3s ease-in-out reverse infinite;
+  animation: blink 1.5s ease-in-out reverse infinite;
 }
 
 @keyframes blink {
   to {
-    opacity: 0.1;
+    opacity: 0.3;
   }
 }
 @keyframes fade--out {
@@ -303,13 +303,14 @@ body {
   background-color: #d9d9d9;
 }
 .geoloc__icon {
-  padding-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
+  padding-top: 1rem;
 }
 .hero__title {
   text-align: center;
@@ -319,17 +320,23 @@ body {
   font-size: smaller;
 }
 .hero__btn {
+  margin-top: 1rem;
   align-self: center;
   font-size: smaller;
 }
 
 .guide {
   display: flex;
+  margin-bottom: 2rem;
 }
 .guide__container {
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+.guide__title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .restaurants {
