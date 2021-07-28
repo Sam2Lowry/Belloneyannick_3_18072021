@@ -92,7 +92,7 @@ body {
 
 .heart--empty {
   transition: opacity 0.2s;
-  color: bisque;
+  color: #ff7ad9;
 }
 
 .fa-heart {

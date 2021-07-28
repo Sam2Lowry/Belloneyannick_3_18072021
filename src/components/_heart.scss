@@ -1,3 +1,5 @@
+@use '../utils/variables' as v;
+
 .fav--heart {
   margin-top: 15%;
   margin-left: 15%;
@@ -17,7 +19,7 @@
 
 .heart--empty {
   transition: opacity 0.2s;
-  color: bisque;
+  color: v.$color-secondary;
 }
 
 .fa-heart {
