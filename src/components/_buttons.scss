@@ -13,6 +13,9 @@
     rgba(146, 86, 220, 1) 100%
   );
   margin-bottom: v.$padding;
+  &:visited {
+    color: white;
+  }
 }
 
 // # // Fonctionnement et tuto
