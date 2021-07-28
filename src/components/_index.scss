@@ -43,14 +43,19 @@
   display: flex;
   flex-direction: column;
   background-color: f.tint(v.$grey, 90%);
+  
   &__title {
     text-align: center;
   }
   &__sub {
     text-align: center;
+    font-size: smaller;
+
   }
   &__btn {
     align-self: center;
+    font-size: smaller;
+  
   }
 }
 

@@ -3,14 +3,14 @@
 
 $heading-font-family: "shrikhand", sans-serif; // # // logo and title
 $body-font-family: "Roboto", sans-serif; // # // Textes
-// $base-font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+$base-font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 $base-font-weight: 400;
 $ratio: 1.2; // # // Need to be ajusted if needed !!!
 
 *,
 body {
   font-size: 1rem;
-  // font-size: $base-font-size;
+  font-size: $base-font-size;
   font-family: $body-font-family;
   line-height: 1.5;
 }
