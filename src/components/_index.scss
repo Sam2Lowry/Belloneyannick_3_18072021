@@ -3,6 +3,9 @@
 @use '../utils/functions' as f;
 @use '../base/typography';
 @use '../components/card';
+@use '../components/heart';
+@use '../base/animations';
+@use '../components/buttons';
 
 .header {
   width: 100%;
