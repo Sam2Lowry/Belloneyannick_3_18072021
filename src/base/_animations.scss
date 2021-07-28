@@ -28,3 +28,34 @@
     opacity: 0.1;
   }
 }
+
+// # // Loader animation 
+
+@keyframes fade--out {
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes bounce {
+  to {
+    width: 1rem;
+    height: 1rem;
+    transform: translate3d(0, -16px, 0);
+  }
+}
+@keyframes crunch {
+  50% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    width: 4.8rem;
+    opacity: 0;
+  }
+}

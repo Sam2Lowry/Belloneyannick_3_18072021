@@ -1,5 +1,7 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 *,
 body {
   font-size: 1rem;
@@ -125,6 +127,34 @@ a:visited {
     opacity: 0.1;
   }
 }
+@keyframes fade--out {
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes bounce {
+  to {
+    width: 1rem;
+    height: 1rem;
+    transform: translate3d(0, -16px, 0);
+  }
+}
+@keyframes crunch {
+  50% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    width: 4.8rem;
+    opacity: 0;
+  }
+}
 .hero__btn {
   border-radius: 20px;
   padding: 10px 20px;
@@ -175,6 +205,74 @@ a:visited {
 }
 .guide__list__step__icon {
   color: #666666;
+}
+
+.front--load {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  animation: fade--out 3s forwards;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.loader {
+  display: grid;
+  width: 21rem;
+  height: 7rem;
+}
+
+.loading--icons {
+  color: black;
+  font-family: "Shrikhand", cursive;
+  font-size: 2.5rem;
+}
+
+.loading--icons::after {
+  content: "🍣";
+  display: inline-block;
+  color: #9356dc;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  font-weight: 900;
+  width: 0;
+  animation: crunch steps(60, end) 3s infinite;
+}
+
+.loading--balls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.loading--balls > span {
+  display: inline-block;
+  background-color: #9356dc;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  margin: 0 8px;
+  transform: translate3d(0);
+  animation: bounce 0.6s infinite alternate;
+}
+
+.loading--balls > span:nth-child(2) {
+  background-color: #ff79da;
+  animation-delay: 0.2s;
+}
+
+.loading--balls > span:nth-child(3) {
+  background-color: #99e2d0;
+  animation-delay: 0.4s;
 }
 
 .header {

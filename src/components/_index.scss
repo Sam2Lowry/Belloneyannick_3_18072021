@@ -6,7 +6,7 @@
 @use '../components/heart';
 @use '../base/animations';
 @use '../components/buttons';
-
+@use '../components/loader';
 
 .header {
   width: 100%;
@@ -77,7 +77,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
-    
   }
   .container {
     display: flex;
