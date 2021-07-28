@@ -4,9 +4,19 @@
     display: flex;
     flex-direction: column;
     background-color: white;
+    position: relative;
     border-radius: 10px;
     margin-bottom: v.$padding;
     box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
+
+    &__new--rest{
+      position: absolute ;
+      right: 1%;
+      top: 5%;
+      color: black;
+      padding: 5px 5px 5px 5px ;
+      background-color: v.$color-tertiary;
+    }
 
     &__img {
       // display: block;

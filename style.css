@@ -33,9 +33,18 @@ a:visited {
   display: flex;
   flex-direction: column;
   background-color: white;
+  position: relative;
   border-radius: 10px;
   margin-bottom: 1rem;
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
+}
+.restaurants .rest--card__new--rest {
+  position: absolute;
+  right: 1%;
+  top: 5%;
+  color: black;
+  padding: 5px 5px 5px 5px;
+  background-color: #98e2cf;
 }
 .restaurants .rest--card__img {
   object-fit: cover;
@@ -105,6 +114,15 @@ a:visited {
   }
   100% {
     transform: scale(1.1);
+  }
+}
+.rest--card__new--rest {
+  animation: blink 1.3s ease-in-out reverse infinite;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0.1;
   }
 }
 .hero__btn {
