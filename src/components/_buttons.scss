@@ -1,5 +1,6 @@
 @use '../utils/variables' as v;
 @use '../utils/mixins' as m;
+@use '../utils/functions' as f;
 
 // # // bouton "Explorer nos restaurants"
 .hero__btn {
@@ -25,19 +26,22 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      margin-bottom: 10px;
+      background-color: f.tint(v.$grey, 90%);
       position: relative;
-      padding: 5px 0 5px 30px;
-      border: solid 1px;
+      padding: 20px 0 20px 30px;
       border-radius: 10px;
       width: 80vw;
+      box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
 
       &:before {
+        @include m.center-this;
         content: counter(li);
         counter-increment: li;
         color: white;
-        font-size: x-small;
-        height: 15px;
-        width: 15px;
+        font-size: small;
+        height: 20px;
+        width: 20px;
         background-color: v.$color-primary;
         border-radius: 50%;
         text-align: center;
@@ -45,8 +49,11 @@
         left: -10px;
       }
       &__desc {
-        font-size: small;
+        font-size: normal;
         margin: auto;
+      }
+      &__icon {
+        color: f.shade(v.$grey, 20%);
       }
     }
   }
