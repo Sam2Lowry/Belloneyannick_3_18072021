@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+.front--load {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 100;
+  animation: fade--out 3s forwards;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.loader {
+  display: grid;
+  width: 21rem;
+  height: 7rem;
+}
+.loading--icons {
+  color: black;
+  font-family: "Shrikhand", cursive;
+  font-size: 2.5rem;
+}
+.loading--icons::after {
+  content: "\01F363";
+  display: inline-block;
+  color: #9356dc;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  font-weight: 900;
+  width: 0;
+  animation: crunch steps(60, end) 3s infinite;
+}
+
+.loading--balls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.loading--balls > span {
+  display: inline-block;
+  background-color: #9356dc;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  margin: 0 8px;
+  transform: translate3d(0);
+  animation: bounce 0.6s infinite alternate;
+}
+.loading--balls > span:nth-child(2) {
+  background-color: #ff79da;
+  animation-delay: 0.2s;
+}
+.loading--balls > span:nth-child(3) {
+  background-color: #99e2d0;
+  animation-delay: 0.4s;
+}
+

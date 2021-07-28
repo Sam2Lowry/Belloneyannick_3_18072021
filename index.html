@@ -23,19 +23,38 @@
       property="og:url"
       content="https://www.ohmyfood.com/miam_du_remugle"
     />
-    <meta property="og:image" content="src/images/remugle.png" />
+    <meta property="og:image" content="images/remugle.png" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/30c3931934.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
       crossorigin="anonymous"
     ></script>
   </head>
 
   <body>
+    <!-- LOADER -->
+    <div class="front--load">
+      <div class="loader">
+        <div class="loading--icons">Oh my food !</div>
+        <div class="loading--balls">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
     <!-- LOGO ET GEOLOC -->
     <header class="header">
-      <h1 class="header_logo"><img src="/src/images/logo/ohmyfood.png" alt="ohmyfood"></h1>
+      <h1 class="header__logo">
+        <img src="images/logo/ohmyfood.png" alt="ohmyfood" />
+      </h1>
     </header>
     <main>
       <section class="geoloc">
@@ -60,17 +79,21 @@
         <div class="guide__container">
           <h2 class="guide__title">Fonctionnement</h2>
           <ol class="guide__list">
-            <li class="guide__step">
-              <i class="tuto__icon fas fa-mobile-alt"></i>
-              <span class="desc">Choisissez votre restaurant</span>
+            <li class="guide__list__step">
+              <i class="guide__list__step__icon fas fa-mobile-alt"></i>
+              <span class="guide__list__step__desc"
+                >Choisissez votre restaurant</span
+              >
             </li>
-            <li class="guide__step">
-              <i class="tuto__icon fas fa-list-ul"></i>
-              <span class="desc">Composez votre menu</span>
+            <li class="guide__list__step">
+              <i class="guide__list__step__icon fas fa-list-ul"></i>
+              <span class="guide__list__step__desc">Composez votre menu</span>
             </li>
-            <li class="guide__step">
-              <i class="tuto__icon fas fa-store"></i>
-              <span class="desc">Dégustez au restaurant</span>
+            <li class="guide__list__step">
+              <i class="guide__list__step__icon fas fa-store"></i>
+              <span class="guide__list__step__desc"
+                >Dégustez au restaurant</span
+              >
             </li>
           </ol>
         </div>
@@ -84,135 +107,154 @@
           <div class="restaurants__grid">
             <!-- CARD LA PALETTE DU GOUT -->
             <a href="/la_palette_du_gout.html" class="rest--card">
-              <img
-                src="/src/images/restaurants/la_palette_du_gout.jpg"
-                alt="La palette du goût"
-                class="rest--card__img"
-              />
-              <span class="new--rest">Nouveau</span>
-              <div class="rest--card__desc">
-                <h3 class="rest--card__name">La palette du goût</h3>
-                <span class="rest--card__loc">Ménilmontant</span>
+              <div class="rest--card__imgcontainer">
+                <img
+                  src="images/restaurants/la_palette_du_gout.jpg"
+                  alt="La palette du goût"
+                  class="rest--card__img"
+                />
               </div>
-              <div class="rest--card__like">
-                <div class="fav--heart">
-                  <div class="heart--empty">
-                    <i
-                      class="far fa-2x fa-heart heart--black"
-                      aria-hidden="true"
-                    ></i>
-                  </div>
-                  <div class="heart--full">
-                    <i
-                      class="fas fa-2x fa-heart heart--color"
-                      aria-hidden="true"
-                    ></i>
+
+              <span class="rest--card__new--rest">Nouveau</span> 
+              <div class="rest--card__fig">
+                <div class="rest--card__desc">
+                  <h3 class="rest--card__name">La palette du goût</h3>
+                  <span class="rest--card__loc">Ménilmontant</span>
+                </div>
+
+                <div class="rest--card__like">
+                  <div class="fav--heart">
+                    <div class="heart--empty">
+                      <i
+                        class="far fa-2x fa-heart heart--black"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="heart--full">
+                      <i
+                        class="fas fa-2x fa-heart heart--color"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </a>
             <!-- CARD LA NOTE ENCHANTEE -->
             <a href="/la_note_enchantee.html" class="rest--card">
-              <img
-                src="/src/images/restaurants/la_note_enchantee.jpg"
-                alt="La note enchantée"
-                class="rest--card__img"
-              />
-              <span class="new--rest">Nouveau</span>
-              <div class="rest--card__desc">
-                <h3 class="rest--card__name">La note enchantée</h3>
-                <span class="rest--card__loc">Charonne</span>
+              <div class="rest--card__imgcontainer">
+                <img
+                  src="images/restaurants/la_note_enchantee.jpg"
+                  alt="La note enchantée"
+                  class="rest--card__img"
+                />
               </div>
-              <div class="rest--card__like">
-                <div class="fav--heart">
-                  <div class="heart--empty">
-                    <i
-                      class="far fa-2x fa-heart heart--black"
-                      aria-hidden="true"
-                    ></i>
-                  </div>
-                  <div class="heart--full">
-                    <i
-                      class="fas fa-2x fa-heart heart--color"
-                      aria-hidden="true"
-                    ></i>
+             <span class="rest--card__new--rest">Nouveau</span>
+              <div class="rest--card__fig">
+                <div class="rest--card__desc">
+                  <h3 class="rest--card__name">La note enchantée</h3>
+                  <span class="rest--card__loc">Charonne</span>
+                </div>
+                <div class="rest--card__like">
+                  <div class="fav--heart">
+                    <div class="heart--empty">
+                      <i
+                        class="far fa-2x fa-heart heart--black"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="heart--full">
+                      <i
+                        class="fas fa-2x fa-heart heart--color"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </a>
             <!-- CARD A LA FRANCAISE -->
             <a href="/a_la_francaise.html" class="rest--card">
-              <img
-                src="/src/images/restaurants/a_la_francaise.jpg"
-                alt="À la française"
-                class="rest--card__img"
-              />
-              <div class="rest--card__desc">
-                <h3 class="rest--card__name">À la française</h3>
-                <span class="rest--card__loc">Cité Rouge</span>
+              <div class="rest--card__imgcontainer">
+                <img
+                  src="images/restaurants/a_la_francaise.jpg"
+                  alt="À la française"
+                  class="rest--card__img"
+                />
               </div>
-              <div class="rest--card__like">
-                <div class="fav--heart">
-                  <div class="heart--empty">
-                    <i
-                      class="far fa-2x fa-heart heart--black"
-                      aria-hidden="true"
-                    ></i>
-                  </div>
-                  <div class="heart--full">
-                    <i
-                      class="fas fa-2x fa-heart heart--color"
-                      aria-hidden="true"
-                    ></i>
+              <div class="rest--card__fig">
+                <div class="rest--card__desc">
+                  <h3 class="rest--card__name">À la française</h3>
+                  <span class="rest--card__loc">Cité Rouge</span>
+                </div>
+                <div class="rest--card__like">
+                  <div class="fav--heart">
+                    <div class="heart--empty">
+                      <i
+                        class="far fa-2x fa-heart heart--black"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="heart--full">
+                      <i
+                        class="fas fa-2x fa-heart heart--color"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </a>
             <!-- CARD LE DELICE DES SENS -->
             <a href="/le_delice_des_sens.html" class="rest--card">
-              <img
-                src="/src/images/restaurants/le_delice_des_sens.jpg"
-                alt="Le délice des sens"
-                class="rest--card__img"
-              />
-              <div class="rest--card__desc">
-                <h3 class="rest--card__name">Le délice des sens</h3>
-                <span class="rest--card__loc">Folie-Méricourt</span>
+              <div class="rest--card__imgcontainer">
+                <img
+                  src="images/restaurants/le_delice_des_sens.jpg"
+                  alt="Le délice des sens"
+                  class="rest--card__img"
+                />
               </div>
-              <div class="rest--card__like">
-                <div class="fav--heart">
-                  <div class="heart--empty">
-                    <i
-                      class="far fa-2x fa-heart heart--black"
-                      aria-hidden="true"
-                    ></i>
-                  </div>
-                  <div class="heart--full">
-                    <i
-                      class="fas fa-2x fa-heart heart--color"
-                      aria-hidden="true"
-                    ></i>
+              <div class="rest--card__fig">
+                <div class="rest--card__desc">
+                  <h3 class="rest--card__name">Le délice des sens</h3>
+                  <span class="rest--card__loc">Folie-Méricourt</span>
+                </div>
+                <div class="rest--card__like">
+                  <div class="fav--heart">
+                    <div class="heart--empty">
+                      <i
+                        class="far fa-2x fa-heart heart--black"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+                    <div class="heart--full">
+                      <i
+                        class="fas fa-2x fa-heart heart--color"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </a>
           </div>
         </div>
+        <svg width="0" height="0">
+          <linearGradient id="lgrad" x1="100%" y1="100%" x2="0%" y2="0%">
+            <stop
+              offset="0%"
+              style="stop-color: rgb(146, 86, 220); stop-opacity: 1"
+            />
+            <stop
+              offset="100%"
+              style="stop-color: rgb(255, 122, 217); stop-opacity: 1"
+            />
+          </linearGradient>
+        </svg>
       </section>
     </main>
     <!-- GRADIENT FILL HEART -->
-    <svg width="0" height="0">
-      <linearGradient id="lgrad" x1="100%" y1="100%" x2="0%" y2="0%">
-        <stop
-          offset="0%"
-          style="stop-color: rgb(146, 86, 220); stop-opacity: 1"
-        />
-        <stop
-          offset="100%"
-          style="stop-color: rgb(255, 122, 217); stop-opacity: 1"
-        />
-      </linearGradient>
-    </svg>
+
     <!-- FOOTER DE LA PAGE -->
     <footer class="footer">
       <div class="container">

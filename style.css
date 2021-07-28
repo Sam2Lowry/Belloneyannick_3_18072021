@@ -1,11 +1,21 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 *,
-body {
-  font-size: 1rem;
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
-  font-family: "Roboto", sans-serif;
-  line-height: 1.5;
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
 }
 
 /* Slightly lighten or darken a color
@@ -14,11 +24,351 @@ body {
 @param {Number} $percentage - percentage of `$color` in returned color
 @return {Color} */
 *,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+.restaurants .rest--card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
+}
+.restaurants .rest--card__new--rest {
+  position: absolute;
+  right: 1%;
+  top: 5%;
+  color: black;
+  padding: 5px 5px 5px 5px;
+  background-color: #98e2cf;
+}
+.restaurants .rest--card__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.restaurants .rest--card__imgcontainer {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  max-height: 150px;
+}
+.restaurants .rest--card__desc {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.restaurants .rest--card__fig {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fav--heart {
+  margin-top: 15%;
+  margin-left: 15%;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.heart--full svg * {
+  fill: url(#lgrad);
+}
+
+.heart--full {
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.heart--empty {
+  transition: opacity 0.2s;
+  color: bisque;
+}
+
+.fa-heart {
+  position: absolute;
+  left: -3rem;
+  top: 1rem;
+}
+
+.fav--heart:hover .heart--empty {
+  opacity: 0;
+}
+
+.fav--heart:hover .heart--full {
+  opacity: 1;
+  animation: boom3x 200ms cubic-bezier(0.39, 0.575, 0.565, 1) 50ms 3 both;
+}
+
+@keyframes boom3x {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.rest--card__new--rest {
+  animation: blink 1.3s ease-in-out reverse infinite;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0.1;
+  }
+}
+@keyframes fade--out {
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes bounce {
+  to {
+    width: 1rem;
+    height: 1rem;
+    transform: translate3d(0, -16px, 0);
+  }
+}
+@keyframes crunch {
+  50% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    width: 4.8rem;
+    opacity: 0;
+  }
+}
+.hero__btn {
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  background: linear-gradient(180deg, #ff7ad9 0%, #9256dc 100%);
+  margin-bottom: 1rem;
+}
+.hero__btn:visited {
+  color: white;
+}
+
+.guide__list {
+  counter-reset: li;
+  list-style-type: none;
+}
+.guide__list__step {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #f2f2f2;
+  position: relative;
+  padding: 20px 0 20px 30px;
+  border-radius: 10px;
+  width: 80vw;
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
+}
+.guide__list__step:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: counter(li);
+  counter-increment: li;
+  color: white;
+  font-size: small;
+  height: 20px;
+  width: 20px;
+  background-color: #9256dc;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  left: -10px;
+}
+.guide__list__step__desc {
+  font-size: normal;
+  margin: auto;
+}
+.guide__list__step__icon {
+  color: #666666;
+}
+
+.front--load {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 100;
+  animation: fade--out 3s forwards;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.loader {
+  display: grid;
+  width: 21rem;
+  height: 7rem;
+}
+
+.loading--icons {
+  color: black;
+  font-family: "Shrikhand", cursive;
+  font-size: 2.5rem;
+}
+
+.loading--icons::after {
+  content: "🍣";
+  display: inline-block;
+  color: #9356dc;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  font-weight: 900;
+  width: 0;
+  animation: crunch steps(60, end) 3s infinite;
+}
+
+.loading--balls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.loading--balls > span {
+  display: inline-block;
+  background-color: #9356dc;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  margin: 0 8px;
+  transform: translate3d(0);
+  animation: bounce 0.6s infinite alternate;
+}
+
+.loading--balls > span:nth-child(2) {
+  background-color: #ff79da;
+  animation-delay: 0.2s;
+}
+
+.loading--balls > span:nth-child(3) {
+  background-color: #99e2d0;
+  animation-delay: 0.4s;
+}
+
+.header {
+  width: 100%;
+}
+.header:after {
+  content: "";
+  display: block;
+  width: auto;
+  border-bottom: 3px solid silver;
+  padding-bottom: 0.5rem;
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 2rem;
+}
+.header__logo img {
+  object-fit: cover;
+}
+
+.geoloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  background-color: #d9d9d9;
+}
+.geoloc__icon {
+  padding-right: 1rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+.hero__title {
+  text-align: center;
+}
+.hero__sub {
+  text-align: center;
+  font-size: smaller;
+}
+.hero__btn {
+  align-self: center;
+  font-size: smaller;
+}
+
+.guide {
+  display: flex;
+}
+.guide__container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.restaurants {
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+.restaurants__title {
+  padding-bottom: 1.2rem;
+}
+.restaurants__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+}
+.restaurants .container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+
+.footer {
+  display: flex;
+  background-color: #1a1a1a;
+  padding: 1.2rem;
+  color: white;
+}
+.footer__title {
+  font-family: "shrikhand";
+}
+.footer__icon {
+  padding-right: 0.5rem;
+  font-size: x-large;
+}
+.footer__list {
+  margin-top: 0.8rem;
+  list-style-type: none;
+  font-weight: normal;
+  line-height: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

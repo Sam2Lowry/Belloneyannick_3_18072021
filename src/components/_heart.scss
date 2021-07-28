@@ -1,0 +1,27 @@
+.fav--heart {
+  margin-top: 15%;
+  margin-left: 15%;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.heart--full svg * {
+  fill: url(#lgrad);
+}
+
+.heart--full {
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.heart--empty {
+  transition: opacity 0.2s;
+  color: bisque;
+}
+
+.fa-heart {
+  position: absolute;
+  left: -3rem;
+  top: 1rem;
+}

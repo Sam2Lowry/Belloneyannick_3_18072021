@@ -1,0 +1,108 @@
+@use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+@use '../utils/functions' as f;
+@use '../base/typography';
+@use '../components/card';
+@use '../components/heart';
+@use '../base/animations';
+@use '../components/buttons';
+@use '../components/loader';
+
+.header {
+  width: 100%;
+
+  &:after {
+    content: "";
+    display: block;
+    width: auto;
+    border-bottom: 3px solid f.tint(v.$grey, 50%);
+    padding-bottom: v.$padding * 0.5;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 2rem;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.geoloc {
+  @include m.center-this;
+  height: 2.5rem;
+  background-color: f.tint(v.$grey, 70%);
+  &__icon {
+    padding-right: v.$padding;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  background-color: f.tint(v.$grey, 90%);
+
+  &__title {
+    text-align: center;
+  }
+  &__sub {
+    text-align: center;
+    font-size: smaller;
+  }
+  &__btn {
+    align-self: center;
+    font-size: smaller;
+  }
+}
+
+.guide {
+  display: flex;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+.restaurants {
+  background-color: f.tint(v.$grey, 90%);
+  padding: v.$padding;
+  &__title {
+    padding-bottom: v.$padding * 1.2;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+  }
+  @extend %rest--card;
+}
+
+.footer {
+  display: flex;
+  background-color: f.shade(v.$grey, 80%);
+  padding: v.$padding * 1.2;
+  color: white;
+  &__title {
+    font-family: "shrikhand";
+  }
+  &__icon {
+    padding-right: v.$padding * 0.5;
+    font-size: x-large;
+  }
+  &__list {
+    margin-top: v.$padding * 0.8;
+    list-style-type: none;
+    font-weight: normal;
+    line-height: 1rem;
+  }
+}
