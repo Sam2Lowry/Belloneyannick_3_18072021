@@ -19,7 +19,7 @@
   height: 30vh;
   object-fit: cover;
 }
- 
+
 .menu--list {
   background-color: f.tint(v.$grey, 90%);
   margin-top: -4rem;
@@ -31,5 +31,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  &__heart {
+    position: absolute;
   }
 }

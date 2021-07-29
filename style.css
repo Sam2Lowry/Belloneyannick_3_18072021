@@ -74,8 +74,6 @@ body {
 }
 
 .fav--heart {
-  margin-top: 15%;
-  margin-left: 15%;
   display: flex;
   position: relative;
   cursor: pointer;
@@ -95,10 +93,16 @@ body {
   color: #ff7ad9;
 }
 
-.fa-heart {
+.index__heart {
   position: absolute;
   left: -3rem;
   top: 1rem;
+}
+
+.menu--list__heart {
+  position: absolute;
+  left: -3rem;
+  top: -1rem;
 }
 
 .fav--heart:hover .heart--empty {
@@ -412,6 +416,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.menu--list__heart {
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
