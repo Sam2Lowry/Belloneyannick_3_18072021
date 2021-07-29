@@ -32,9 +32,7 @@
   <body>
     <!-- HEADER AVEC RETOUR INDEX -->
     <header class="header--back">
-      <a href="./index.html"
-        ><i class="fas fa-arrow-left header--back__arrow"></i
-      ></a>
+      <a href="./index.html"><i class="fas fa-arrow-left header--back__arrow"></i></a>
       <h1 class="header--back__title">ohmyfood</h1>
     </header>
 
@@ -48,18 +46,17 @@
     <!-- MENU ET 3 SOUS-MENU -->
     <main class="menu--list">
       <header class="menu--list__header">
-        <h2 class="menu__title">À la française</h2>
-        <!-- <button class="menu__like"> -->
-        <div class="fav--heart">
-          <div class="heart--empty">
-            <i class="far fa-2x fa-heart heart--black" aria-hidden="true"></i>
+        <h2 class="menu--list__title">À la française</h2>
+         <!-- <button class="menu__like"> -->
+          <div class="fav--heart">
+            <div class="heart--empty">
+              <i class="far fa-2x fa-heart heart--black" aria-hidden="true"></i>
+            </div>
+            <div class="heart--full">
+              <i class="fas fa-2x fa-heart heart--color" aria-hidden="true"></i>
+            </div>
           </div>
-          <div class="heart--full">
-            <i class="fas fa-2x fa-heart heart--color" aria-hidden="true"></i>
-          </div>
-
-          <!-- </button>  -->
-        </div>
+       <!-- </button>  -->
       </header>
 
       <!-- BLOC SOUS MENU -->
@@ -70,6 +67,7 @@
           <!-- ENTREE -->
           <h3 class="title">ENTRÉES</h3>
           <section class="anim--delay__x">
+            
             <div class="card">
               <div class="textContainer">
                 <h4>Tartare de poulpe acidulé</h4>
@@ -117,6 +115,7 @@
           <!-- PLATS -->
           <h3 class="title">PLATS</h3>
           <section class="anim--delay__y">
+
             <div class="card">
               <div class="textContainer">
                 <h4>Coquilles Saint-Jacques</h4>
@@ -154,11 +153,7 @@
                 </div>
               </div>
               <label for="Pigeonneau" class="checkbox">
-                <input
-                  type="checkbox"
-                  class="custom-checkbox"
-                  id="Pigeonneau"
-                />
+                <input type="checkbox" class="custom-checkbox" id="Pigeonneau" />
                 <span class="custom-checkbox-icon"></span>
               </label>
             </div>
@@ -168,6 +163,7 @@
           <!-- DESSERTS -->
           <h3 class="title">DESSERTS</h3>
           <section class="anim--delay__z">
+
             <div class="card">
               <div class="textContainer">
                 <h4>Pétales de violettes glacés</h4>
@@ -205,11 +201,7 @@
                 </div>
               </div>
               <label for="Millefeuille" class="checkbox">
-                <input
-                  type="checkbox"
-                  class="custom-checkbox"
-                  id="Millefeuille"
-                />
+                <input type="checkbox" class="custom-checkbox" id="Millefeuille" />
                 <span class="custom-checkbox-icon"></span>
               </label>
             </div>
@@ -219,6 +211,20 @@
         <!-- BOUTON POUR COMMANDER -->
         <button class="menu--list__btn">Commander</button>
       </div>
+
+      <!-- SVG GRADIENT HEART
+      <svg width="0" height="0">
+        <linearGradient id="lgrad" x1="100%" y1="100%" x2="0%" y2="0%">
+          <stop
+            offset="0%"
+            style="stop-color: rgb(146, 86, 220); stop-opacity: 1"
+          />
+          <stop
+            offset="100%"
+            style="stop-color: rgb(255, 122, 217); stop-opacity: 1"
+          />
+        </linearGradient>
+      </svg> -->
     </main>
     <!-- FOOTER -->
     <footer class="footer">

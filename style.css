@@ -391,13 +391,17 @@ body {
 .header--back__title {
   font-family: "shrikhand";
   margin: auto;
+  font-size: larger;
 }
 
 .hero--img {
   width: 100%;
-  height: 250px;
+  height: 25vh;
   object-fit: cover;
-  position: relative;
+}
+
+.menu--list {
+  background: #f2f2f2;
 }
 
 /*# sourceMappingURL=style.css.map */

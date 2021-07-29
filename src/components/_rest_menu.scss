@@ -1,4 +1,5 @@
 @use '../utils/variables' as v;
+@use '../utils/functions' as f;
 .header--back {
   display: flex;
   flex-direction: row;
@@ -8,12 +9,16 @@
   &__title {
     font-family: "shrikhand";
     margin: auto;
+    font-size:larger;
   }
 }
 
 .hero--img {
   width: 100%;
-  height: 250px;
+  height: 25vh;
   object-fit: cover;
-  position: relative;
+}
+
+.menu--list {
+    background: f.tint(v.$grey, 90%);
 }
