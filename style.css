@@ -483,7 +483,7 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
   border-radius: 20px;
   overflow: hidden;
   margin-bottom: 1rem;
-  box-shadow: 0 0.9px 2.2px rgba(0, 0, 0, 0.02), 0 2.2px 5.3px rgba(0, 0, 0, 0.028), 0 4.1px 10px rgba(0, 0, 0, 0.035), 0 7.4px 17.9px rgba(0, 0, 0, 0.042), 0 13.8px 33.4px rgba(0, 0, 0, 0.05), 0 33px 80px rgba(0, 0, 0, 0.07);
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
 }
 
 .textContainer {
@@ -497,12 +497,6 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
 .desc {
   display: flex;
   justify-content: space-between;
-}
-
-h1 {
-  margin: 0;
-  padding: 0 0 3px 0;
-  white-space: nowrap;
 }
 
 .title {
@@ -524,10 +518,6 @@ h4 {
   padding-left: 0.3rem;
 }
 
-.price {
-  font-weight: bold;
-}
-
 p {
   padding: 0;
   padding-left: 0.3rem;
@@ -535,6 +525,12 @@ p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  font-size: smaller;
+}
+
+.price {
+  font-weight: bold;
+  padding-right: 10px;
 }
 
 .checkbox {
@@ -551,7 +547,6 @@ p {
   position: relative;
   cursor: pointer;
 }
-
 .checkbox .custom-checkbox {
   height: 30px;
   width: 30px;
@@ -559,7 +554,6 @@ p {
   opacity: 0;
   cursor: pointer;
 }
-
 .checkbox .custom-checkbox-icon {
   height: 30px;
   width: 30px;
@@ -571,7 +565,6 @@ p {
   line-height: 30px;
   transition: all 0.4s ease-in-out both;
 }
-
 .checkbox .custom-checkbox-icon::before {
   content: "✔";
   color: #ffffff;
