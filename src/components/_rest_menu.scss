@@ -1,0 +1,19 @@
+@use '../utils/variables' as v;
+.header--back {
+  display: flex;
+  flex-direction: row;
+  &__arrow {
+    margin-left: v.$padding;
+  }
+  &__title {
+    font-family: "shrikhand";
+    margin: auto;
+  }
+}
+
+.hero--img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  position: relative;
+}

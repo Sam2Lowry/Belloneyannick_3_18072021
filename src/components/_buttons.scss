@@ -16,6 +16,13 @@
   &:visited {
     color: white;
   }
+  &:hover {
+    background: linear-gradient(
+      180deg,
+      rgba(146, 86, 220, 1) 0%,
+      rgba(255, 122, 217, 1) 100%
+    );
+  }
 }
 
 // # // Fonctionnement et tuto
