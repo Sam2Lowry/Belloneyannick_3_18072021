@@ -10,7 +10,7 @@
   &__title {
     font-family: "shrikhand";
     margin: auto;
-    font-size: larger;
+    font-size: x-large;
   }
 }
 
@@ -26,6 +26,7 @@
   border-radius: 2rem 2rem 0 0;
   z-index: 1;
   position: relative;
+  width: 100%;
 
   &__header {
     padding: 1rem 2rem 0 1rem;
@@ -36,6 +37,7 @@
   }
   &__title {
     font-family: "shrikhand";
+    font-size: x-large;
   }
   &__heart {
     position: absolute;
@@ -46,8 +48,11 @@
   flex-direction: column;
   align-items: center;
 }
+
+// # // Configuration des éléments du menu avec checkin animation
 .card {
   display: flex;
+  height: 70px;
   width: 350px;
   // max-width: 350px;
   background: #ffffff;
@@ -61,11 +66,16 @@
 }
 
 .textContainer {
-  padding: 10px;
+  padding: 5px;
+
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 1rem;
+  font-size: 0.5rem;
+}
+.desc {
+  display: flex;
+  justify-content: space-between;
 }
 
 h1 {
@@ -73,20 +83,30 @@ h1 {
   padding: 0 0 3px 0;
   white-space: nowrap;
 }
-h3 {
+.title {
   margin-bottom: v.$padding;
+  position: relative;
+  &:after{
+    content : "";  
+    position : absolute;  
+    width : 40px;  
+    height : 2px;  
+    background-color: v.$color-tertiary;  
+    bottom: 0; //to place it in bottom  
+    left:0;
+  
+  }
 }
-h4{
-  padding-bottom: v.$padding;
+h4 {
+  padding-bottom: v.$padding * 0.3;
+  padding-left: v.$padding * 0.3;
 }
-
-.desc {
-  display: flex;
-  justify-content: space-between;
+.price {
+  font-weight: bold;
 }
-
 p {
   padding: 0;
+  padding-left: v.$padding * 0.3;
   margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -94,7 +114,7 @@ p {
 }
 
 .checkbox {
-  height: 100px;
+  height: 70px;
   width: 0;
   flex-shrink: 0;
   background-color: #99e2d0;
