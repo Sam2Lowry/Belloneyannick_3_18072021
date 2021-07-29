@@ -1,6 +1,7 @@
 @use '../utils/variables' as v;
 @use '../utils/functions' as f;
 
+// # // header + back arrow to return to index
 .header--back {
   display: flex;
   flex-direction: row;
@@ -13,13 +14,14 @@
     font-size: x-large;
   }
 }
-
+// # // bandeau visuel représentant le restaurant
 .hero--img {
   width: 100%;
   height: 30vh;
   object-fit: cover;
 }
 
+// # // Box menu from header to footer
 .menu--list {
   background-color: f.tint(v.$grey, 90%);
   margin-top: -4rem;
@@ -49,6 +51,12 @@
   align-items: center;
 }
 
+// h1 {
+//   margin: 0;
+//   padding: 0 0 3px 0;
+//   white-space: nowrap;
+// }
+
 // # // Configuration des éléments du menu avec checkin animation
 .card {
   display: flex;
@@ -64,7 +72,7 @@
     0 7.4px 17.9px rgba(0, 0, 0, 0.042), 0 13.8px 33.4px rgba(0, 0, 0, 0.05),
     0 33px 80px rgba(0, 0, 0, 0.07);
 }
-
+// # // Cadre text titre desc et prix
 .textContainer {
   padding: 5px;
 
@@ -73,38 +81,32 @@
   white-space: nowrap;
   font-size: 0.5rem;
 }
+// # // Cadre description incluant p
 .desc {
   display: flex;
   justify-content: space-between;
 }
-
-h1 {
-  margin: 0;
-  padding: 0 0 3px 0;
-  white-space: nowrap;
-}
+// # // Titre des sections du menu
 .title {
   margin-bottom: v.$padding;
   position: relative;
-  &:after{
-    content : "";  
-    position : absolute;  
-    width : 40px;  
-    height : 2px;  
-    background-color: v.$color-tertiary;  
-    bottom: 0; //to place it in bottom  
-    left:0;
-  
+  &:after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: v.$color-tertiary;
+    bottom: 0; //to place it in bottom
+    left: 0;
   }
 }
+
+// # // Titre du produit
 h4 {
   padding-bottom: v.$padding * 0.3;
   padding-left: v.$padding * 0.3;
 }
-.price {
-  font-weight: bold;
-  padding-right: 10px;
-}
+// # // Description du produit
 p {
   padding: 0;
   padding-left: v.$padding * 0.3;
@@ -113,6 +115,11 @@ p {
   overflow: hidden;
   white-space: nowrap;
   font-size: smaller;
+}
+//# // prix du produit
+.price {
+  font-weight: bold;
+  padding-right: 10px;
 }
 
 .checkbox {
@@ -128,31 +135,56 @@ p {
   align-items: center;
   position: relative;
   cursor: pointer;
+
+  & .custom-checkbox {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  & .custom-checkbox-icon {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
+    border: 3px dotted #ffffff;
+    text-align: center;
+    line-height: 30px;
+    transition: all 0.4s ease-in-out both;
+  }
+  & .custom-checkbox-icon::before {
+    content: "✔";
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
 }
 
-.checkbox .custom-checkbox {
-  height: 30px;
-  width: 30px;
-  margin: 0;
-  opacity: 0;
-  cursor: pointer;
-}
+// .checkbox .custom-checkbox {
+//   height: 30px;
+//   width: 30px;
+//   margin: 0;
+//   opacity: 0;
+//   cursor: pointer;
+// }
 
-.checkbox .custom-checkbox-icon {
-  height: 30px;
-  width: 30px;
-  position: absolute;
-  pointer-events: none;
-  border-radius: 50%;
-  border: 3px dotted #ffffff;
-  text-align: center;
-  line-height: 30px;
-  transition: all 0.4s ease-in-out both;
-}
+// .checkbox .custom-checkbox-icon {
+//   height: 30px;
+//   width: 30px;
+//   position: absolute;
+//   pointer-events: none;
+//   border-radius: 50%;
+//   border: 3px dotted #ffffff;
+//   text-align: center;
+//   line-height: 30px;
+//   transition: all 0.4s ease-in-out both;
+// }
 
-.checkbox .custom-checkbox-icon::before {
-  content: "✔";
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
+// .checkbox .custom-checkbox-icon::before {
+//   content: "✔";
+//   color: #ffffff;
+//   font-weight: bold;
+//   font-size: 1.5rem;
+// }

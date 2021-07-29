@@ -499,12 +499,6 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
   justify-content: space-between;
 }
 
-h1 {
-  margin: 0;
-  padding: 0 0 3px 0;
-  white-space: nowrap;
-}
-
 .title {
   margin-bottom: 1rem;
   position: relative;
@@ -524,11 +518,6 @@ h4 {
   padding-left: 0.3rem;
 }
 
-.price {
-  font-weight: bold;
-  padding-right: 10px;
-}
-
 p {
   padding: 0;
   padding-left: 0.3rem;
@@ -537,6 +526,11 @@ p {
   overflow: hidden;
   white-space: nowrap;
   font-size: smaller;
+}
+
+.price {
+  font-weight: bold;
+  padding-right: 10px;
 }
 
 .checkbox {
@@ -553,7 +547,6 @@ p {
   position: relative;
   cursor: pointer;
 }
-
 .checkbox .custom-checkbox {
   height: 30px;
   width: 30px;
@@ -561,7 +554,6 @@ p {
   opacity: 0;
   cursor: pointer;
 }
-
 .checkbox .custom-checkbox-icon {
   height: 30px;
   width: 30px;
@@ -573,7 +565,6 @@ p {
   line-height: 30px;
   transition: all 0.4s ease-in-out both;
 }
-
 .checkbox .custom-checkbox-icon::before {
   content: "✔";
   color: #ffffff;
