@@ -36,14 +36,16 @@
   height: 2.5rem;
   background-color: f.tint(v.$grey, 70%);
   &__icon {
-    padding-right: v.$padding;
-  }
+    margin-right: v.$padding * 0.5;
+   
+   }
 }
 
 .hero {
   display: flex;
   flex-direction: column;
   background-color: f.tint(v.$grey, 90%);
+  padding-top: v.$padding ;
 
   &__title {
     text-align: center;
@@ -53,6 +55,7 @@
     font-size: smaller;
   }
   &__btn {
+    margin-top: v.$padding;
     align-self: center;
     font-size: smaller;
   }
@@ -60,10 +63,15 @@
 
 .guide {
   display: flex;
+  margin-bottom: v.$padding * 2;
   &__container {
     display: flex;
     flex-direction: column;
     margin: auto;
+  }
+  &__title{
+    margin-top: v.$padding;
+    margin-bottom: v.$padding;
   }
 }
 

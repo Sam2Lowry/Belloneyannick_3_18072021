@@ -1,5 +1,5 @@
 // # // Animation de like "Heart--fav
-
+@use '../utils/variables' as v;
 .fav--heart:hover .heart--empty {
   opacity: 0;
 }
@@ -20,12 +20,12 @@
 // # // Animation bandeau nouveauté
 
 .rest--card__new--rest {
-  animation: blink 1.3s ease-in-out reverse infinite;
+  animation: blink 1.5s ease-in-out reverse infinite;
 }
 
 @keyframes blink {
   to {
-    opacity: 0.1;
+    opacity: 0.3;
   }
 }
 
@@ -58,4 +58,46 @@
     width: 4.8rem;
     opacity: 0;
   }
+}
+
+/*Trigger des animations 
+** Elargissement de la boite checkbox
+**animation checkin qui est l'état permettant le retour de de la checkbox icon
+**Animation checkout qui est la réaction au Hover */
+
+.card:hover .checkbox {
+  width: 100px;
+}
+.card .custom-checkbox-icon {
+  animation: checkin 0.4s ease-in-out both;
+}
+.card:hover .custom-checkbox-icon {
+  animation: checkout 0.4s ease-in-out both;
+}
+
+/* Double état associés à l'animation pour avoir un effet hover et un retour statique */
+@keyframes checkin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes checkout {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Check in and out de la commande client */
+checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
+  background-color: #ffffff;
+}
+.checkbox .custom-checkbox:checked ~ .custom-checkbox-icon::before {
+  color: v.$color-primary;
 }

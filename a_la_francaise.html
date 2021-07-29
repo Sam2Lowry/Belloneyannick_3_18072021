@@ -24,16 +24,24 @@
       content="https://www.ohmyfood.com/miam_du_remugle"
     />
     <meta property="og:image" content="images/remugle.png" />
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/30c3931934.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
     <!-- HEADER AVEC RETOUR INDEX -->
     <header class="header--back">
-      <a href="./index.html"><i class="fas fa-arrow-left header__arrow"></i></a>
-      <h1 class="header__title">ohmfood</h1>
+      <a href="./index.html"
+        ><i class="fas fa-arrow-left header--back__arrow"></i
+      ></a>
+      <h1 class="header--back__title">ohmyfood</h1>
     </header>
 
     <!-- BANDEAU IMAGE -->
@@ -46,17 +54,24 @@
     <!-- MENU ET 3 SOUS-MENU -->
     <main class="menu--list">
       <header class="menu--list__header">
-        <h2 class="menu__title">À la française</h2>
-         <!-- <button class="menu__like"> -->
-          <div class="fav--heart">
-            <div class="heart--empty">
-              <i class="far fa-2x fa-heart heart--black" aria-hidden="true"></i>
-            </div>
-            <div class="heart--full">
-              <i class="fas fa-2x fa-heart heart--color" aria-hidden="true"></i>
-            </div>
+        <h2 class="menu--list__title">À la française</h2>
+        <!-- <button class="menu__like"> -->
+        <div class="fav--heart">
+          <div class="heart--empty">
+            <i
+              class="far fa-2x fa-heart heart--black menu--list__heart"
+              aria-hidden="true"
+            ></i>
           </div>
-       <!-- </button>  -->
+          <div class="heart--full">
+            <i
+              class="fas fa-2x fa-heart heart--color menu--list__heart"
+              aria-hidden="true"
+            ></i>
+          </div>
+        </div>
+
+        <!-- </button>  -->
       </header>
 
       <!-- BLOC SOUS MENU -->
@@ -67,12 +82,11 @@
           <!-- ENTREE -->
           <h3 class="title">ENTRÉES</h3>
           <section class="anim--delay__x">
-            
             <div class="card">
               <div class="textContainer">
                 <h4>Tartare de poulpe acidulé</h4>
                 <div class="desc">
-                  <p>Aux zests d'orange</p>
+                  <p>Aux zestes d'orange</p>
                   <span class="price">25€</span>
                 </div>
               </div>
@@ -115,7 +129,6 @@
           <!-- PLATS -->
           <h3 class="title">PLATS</h3>
           <section class="anim--delay__y">
-
             <div class="card">
               <div class="textContainer">
                 <h4>Coquilles Saint-Jacques</h4>
@@ -153,7 +166,11 @@
                 </div>
               </div>
               <label for="Pigeonneau" class="checkbox">
-                <input type="checkbox" class="custom-checkbox" id="Pigeonneau" />
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  id="Pigeonneau"
+                />
                 <span class="custom-checkbox-icon"></span>
               </label>
             </div>
@@ -163,7 +180,6 @@
           <!-- DESSERTS -->
           <h3 class="title">DESSERTS</h3>
           <section class="anim--delay__z">
-
             <div class="card">
               <div class="textContainer">
                 <h4>Pétales de violettes glacés</h4>
@@ -201,7 +217,11 @@
                 </div>
               </div>
               <label for="Millefeuille" class="checkbox">
-                <input type="checkbox" class="custom-checkbox" id="Millefeuille" />
+                <input
+                  type="checkbox"
+                  class="custom-checkbox"
+                  id="Millefeuille"
+                />
                 <span class="custom-checkbox-icon"></span>
               </label>
             </div>
@@ -209,22 +229,21 @@
         </div>
 
         <!-- BOUTON POUR COMMANDER -->
-        <button class="menu--list__btn">Commander</button>
+        <button class="menu--list__btn hero__btn">Commander</button>
+        <!-- SVG GRADIENT HEART-->
+        <svg width="0" height="0">
+          <linearGradient id="lgrad" x1="100%" y1="100%" x2="0%" y2="0%">
+            <stop
+              offset="0%"
+              style="stop-color: rgb(146, 86, 220); stop-opacity: 1"
+            />
+            <stop
+              offset="100%"
+              style="stop-color: rgb(255, 122, 217); stop-opacity: 1"
+            />
+          </linearGradient>
+        </svg>
       </div>
-
-      <!-- SVG GRADIENT HEART-->
-      <svg width="0" height="0">
-        <linearGradient id="lgrad" x1="100%" y1="100%" x2="0%" y2="0%">
-          <stop
-            offset="0%"
-            style="stop-color: rgb(146, 86, 220); stop-opacity: 1"
-          />
-          <stop
-            offset="100%"
-            style="stop-color: rgb(255, 122, 217); stop-opacity: 1"
-          />
-        </linearGradient>
-      </svg>
     </main>
     <!-- FOOTER -->
     <footer class="footer">

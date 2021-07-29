@@ -1,6 +1,6 @@
+@use '../utils/variables' as v;
+
 .fav--heart {
-  margin-top: 15%;
-  margin-left: 15%;
   display: flex;
   position: relative;
   cursor: pointer;
@@ -17,11 +17,17 @@
 
 .heart--empty {
   transition: opacity 0.2s;
-  color: bisque;
+  color: v.$color-secondary;
 }
 
-.fa-heart {
+.index__heart {
   position: absolute;
   left: -3rem;
   top: 1rem;
+}
+
+.menu--list__heart {
+  position: absolute;
+  left: -3rem;
+  top: -1rem;
 }
