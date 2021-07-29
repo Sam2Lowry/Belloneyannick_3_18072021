@@ -526,6 +526,7 @@ h4 {
 
 .price {
   font-weight: bold;
+  padding-right: 10px;
 }
 
 p {
@@ -535,6 +536,7 @@ p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  font-size: smaller;
 }
 
 .checkbox {
