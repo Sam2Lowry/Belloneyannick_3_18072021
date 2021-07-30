@@ -17,6 +17,11 @@ a:visited {
   color: inherit;
 }
 
+body {
+  max-width: 70rem;
+  margin: auto;
+}
+
 /* Slightly lighten or darken a color
 @access public
 @param {Color} $color - color to tint or darken
@@ -243,6 +248,8 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
 .guide__list__step {
   display: flex;
   flex-direction: row;
+  width: 80vw;
+  max-width: 1220px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
@@ -250,7 +257,6 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
   position: relative;
   padding: 20px 0 20px 30px;
   border-radius: 10px;
-  width: 80vw;
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
 }
 .guide__list__step:before {

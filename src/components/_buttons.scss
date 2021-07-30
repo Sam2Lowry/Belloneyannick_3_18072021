@@ -35,6 +35,8 @@
     &__step {
       display: flex;
       flex-direction: row;
+      width: 80vw;
+      max-width:1220px;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 10px;
@@ -42,7 +44,6 @@
       position: relative;
       padding: 20px 0 20px 30px;
       border-radius: 10px;
-      width: 80vw;
       box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
 
       &:before {
