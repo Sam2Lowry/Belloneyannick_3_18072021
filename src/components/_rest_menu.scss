@@ -49,16 +49,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
 }
-// h1 {
-//   margin: 0;
-//   padding: 0 0 3px 0;
-//   white-space: nowrap;
-// }
 
 // # // Configuration des éléments du menu avec checkin animation
 .card {
@@ -139,7 +130,7 @@ p {
   align-items: center;
   position: relative;
   cursor: pointer;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     height: 100px;
   }
 
@@ -168,30 +159,6 @@ p {
     font-size: 1.5rem;
   }
 }
-
-// .checkbox .custom-checkbox {
-//   height: 30px;
-//   width: 30px;
-//   margin: 0;
-//   opacity: 0;
-//   cursor: pointer;
-// }
-
-// .checkbox .custom-checkbox-icon {
-//   height: 30px;
-//   width: 30px;
-//   position: absolute;
-//   pointer-events: none;
-//   border-radius: 50%;
-//   border: 3px dotted #ffffff;
-//   text-align: center;
-//   line-height: 30px;
-//   transition: all 0.4s ease-in-out both;
-// }
-
-// .checkbox .custom-checkbox-icon::before {
-//   content: "✔";
-//   color: #ffffff;
-//   font-weight: bold;
-//   font-size: 1.5rem;
-// }
+body{
+  max-width: 45rem;
+}
