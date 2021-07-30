@@ -107,7 +107,7 @@ body {
 .menu--list__heart {
   position: absolute;
   left: -2rem;
-  top: -1rem;
+  top: -0.7rem;
   font-size: larger;
 }
 
