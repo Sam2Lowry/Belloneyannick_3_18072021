@@ -49,8 +49,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
-
 // h1 {
 //   margin: 0;
 //   padding: 0 0 3px 0;
@@ -68,6 +71,10 @@
   overflow: hidden;
   margin-bottom: v.$padding;
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
+  @media screen and (min-width: 768px) {
+    width: 400px;
+    height: 100px;
+  }
 }
 // # // Cadre text titre desc et prix
 .textContainer {
@@ -132,6 +139,9 @@ p {
   align-items: center;
   position: relative;
   cursor: pointer;
+  @media screen and (min-width: 768px){
+    height: 100px;
+  }
 
   & .custom-checkbox {
     height: 30px;

@@ -495,6 +495,12 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .submenu--list {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 
 .card {
   display: flex;
@@ -505,6 +511,12 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
   overflow: hidden;
   margin-bottom: 1rem;
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 400px;
+    height: 100px;
+  }
 }
 
 .textContainer {
@@ -567,6 +579,11 @@ p {
   align-items: center;
   position: relative;
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .checkbox {
+    height: 100px;
+  }
 }
 .checkbox .custom-checkbox {
   height: 30px;

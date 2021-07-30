@@ -5,8 +5,7 @@ $color-secondary: hsl(317, 100%, 74%);
 $color-tertiary: hsl(165, 56%, 74%);
 // # // ligth green
 
-$grey: hsl(0,0%,50%);
-
+$grey: hsl(0, 0%, 50%);
 
 $color-link: hsl(0, 0%, 0%);
 $color-link-hover: hsl(0, 0%, 0%);
@@ -15,5 +14,13 @@ $color-visited: hsl(0, 0%, 0%);
 // # // Dark grey underline
 $dark--underline: 2px solid $grey;
 
-//#// Padding 
+//#// Padding
 $padding: 1rem;
+
+// # // Responsive
+$breakpoints: (
+  phone: 350px,
+  tablet: 768px,
+  desktop: 1024px,
+) !default;
+ // # // @include media(">phone", "<tablet") { nom nom nom }
