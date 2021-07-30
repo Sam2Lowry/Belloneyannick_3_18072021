@@ -11,7 +11,7 @@
   &__title {
     font-family: "shrikhand";
     margin: auto;
-    font-size: x-large;
+    font-size: xx-large;
   }
 }
 // # // bandeau visuel représentant le restaurant
@@ -40,6 +40,7 @@
   &__title {
     font-family: "shrikhand";
     font-size: x-large;
+    margin-left: v.$padding;
   }
   &__heart {
     position: absolute;

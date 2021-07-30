@@ -240,6 +240,7 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
   color: white;
 }
 .hero__btn:hover {
+  cursor: pointer;
   background: linear-gradient(180deg, #9256dc 0%, #ff7ad9 100%);
 }
 
@@ -466,7 +467,7 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
 .header--back__title {
   font-family: "shrikhand";
   margin: auto;
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 .hero--img {
@@ -493,6 +494,7 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
 .menu--list__title {
   font-family: "shrikhand";
   font-size: x-large;
+  margin-left: 1rem;
 }
 .menu--list__heart {
   position: absolute;
