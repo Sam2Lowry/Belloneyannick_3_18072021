@@ -99,14 +99,16 @@ body {
 
 .index__heart {
   position: absolute;
-  left: -3rem;
+  left: -2rem;
   top: 1rem;
+  font-size: larger;
 }
 
 .menu--list__heart {
   position: absolute;
-  left: -3rem;
+  left: -2rem;
   top: -1rem;
+  font-size: larger;
 }
 
 .fav--heart:hover .heart--empty {
