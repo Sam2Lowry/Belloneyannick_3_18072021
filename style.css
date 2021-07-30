@@ -550,6 +550,11 @@ h4 {
   padding-bottom: 0.3rem;
   padding-left: 0.3rem;
 }
+@media screen and (min-width: 768px) {
+  h4 {
+    padding-left: 0.5rem;
+  }
+}
 
 p {
   padding: 0;
@@ -559,6 +564,13 @@ p {
   overflow: hidden;
   white-space: nowrap;
   font-size: smaller;
+}
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+  }
 }
 
 .price {
@@ -608,10 +620,6 @@ p {
   color: #ffffff;
   font-weight: bold;
   font-size: 1.5rem;
-}
-
-body {
-  max-width: 45rem;
 }
 
 /*# sourceMappingURL=style.css.map */

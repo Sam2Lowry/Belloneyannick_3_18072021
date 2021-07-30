@@ -100,6 +100,10 @@
 h4 {
   padding-bottom: v.$padding * 0.3;
   padding-left: v.$padding * 0.3;
+  @media screen and (min-width: 768px){
+    padding-left: v.$padding * 0.5;
+  }
+  
 }
 // # // Description du produit
 p {
@@ -110,6 +114,11 @@ p {
   overflow: hidden;
   white-space: nowrap;
   font-size: smaller;
+  @media screen and (min-width: 768px){
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    padding-left: v.$padding * 0.5;
+  }
 }
 //# // prix du produit
 .price {
@@ -158,7 +167,4 @@ p {
     font-weight: bold;
     font-size: 1.5rem;
   }
-}
-body{
-  max-width: 45rem;
 }
