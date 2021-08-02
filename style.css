@@ -94,7 +94,7 @@ body {
 
 .heart--empty {
   transition: opacity 0.2s;
-  color: #ff7ad9;
+  color: rgba(0, 0, 0, 0.37);
 }
 
 .index__heart {
@@ -463,8 +463,8 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
   font-family: "shrikhand";
 }
 .footer__icon {
-  padding-right: 0.5rem;
-  font-size: x-large;
+  margin-right: 0.5rem;
+  font-size: large;
 }
 .footer__list {
   margin-top: 0.8rem;

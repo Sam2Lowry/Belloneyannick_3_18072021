@@ -108,8 +108,9 @@
     font-family: "shrikhand";
   }
   &__icon {
-    padding-right: v.$padding * 0.5;
-    font-size: x-large;
+    margin-right: v.$padding * 0.5;
+    font-size: large;
+    
   }
   &__list {
     margin-top: v.$padding * 0.8;

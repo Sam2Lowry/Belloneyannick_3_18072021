@@ -18,7 +18,8 @@
 
 .heart--empty {
   transition: opacity 0.2s;
-  color: v.$color-secondary;
+  // color: v.$color-secondary;
+  color: rgba(0, 0, 0, 0.37);
 }
 
 .index__heart {
