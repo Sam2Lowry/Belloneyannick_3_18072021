@@ -8,6 +8,8 @@
   padding: 10px 20px;
   color: white;
   border: none;
+  font-weight: bold;
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
   background: linear-gradient(
     180deg,
     rgba(255, 122, 217, 1) 0%,
@@ -36,17 +38,21 @@
     &__step {
       display: flex;
       flex-direction: row;
-      width: 80vw;
-      max-width:800px;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 10px;
+      width: 80vw;
+      max-width: 800px;
+      margin-bottom: v.$padding;
       background-color: f.tint(v.$grey, 90%);
+      font-weight: bold;
       position: relative;
       padding: 20px 0 20px 30px;
       border-radius: 10px;
       box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
-
+      &:hover {
+        background-color: f.tint(v.$color-primary, 90%);
+        cursor: pointer;
+      }
       &:before {
         @include m.center-this;
         content: counter(li);
@@ -62,7 +68,7 @@
         left: -10px;
       }
       &__desc {
-        font-size: normal;
+        font-size: medium;
         margin: auto;
       }
       &__icon {

@@ -10,6 +10,7 @@
 
 .header {
   width: 100%;
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
 
   &:after {
     content: "";
@@ -24,7 +25,7 @@
     justify-content: center;
     width: auto;
     height: 2rem;
-
+    padding-top: v.$padding * 0.8;
     img {
       object-fit: cover;
     }
@@ -35,17 +36,18 @@
   @include m.center-this;
   height: 2.5rem;
   background-color: f.tint(v.$grey, 70%);
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
   &__icon {
     margin-right: v.$padding * 0.5;
-   
-   }
+  }
 }
 
 .hero {
   display: flex;
   flex-direction: column;
   background-color: f.tint(v.$grey, 90%);
-  padding-top: v.$padding ;
+  padding-top: v.$padding;
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
 
   &__title {
     text-align: center;
@@ -69,13 +71,14 @@
     flex-direction: column;
     margin: auto;
   }
-  &__title{
+  &__title {
     margin-top: v.$padding;
     margin-bottom: v.$padding;
   }
 }
 
 .restaurants {
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
   background-color: f.tint(v.$grey, 90%);
   padding: v.$padding;
   &__title {
@@ -98,6 +101,7 @@
 .footer {
   display: flex;
   background-color: f.shade(v.$grey, 80%);
+
   padding: v.$padding * 1.2;
   color: white;
   &__title {
