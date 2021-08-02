@@ -51,7 +51,7 @@
   height: 0;
   border-radius: 50%;
   margin: 0 8px;
-  transform: translate3d(0);
+  // transform: translate3d(0);
   animation: bounce 0.6s infinite alternate;
 }
 .loading--balls > span:nth-child(2) {

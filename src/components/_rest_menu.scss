@@ -5,13 +5,16 @@
 .header--back {
   display: flex;
   flex-direction: row;
+  align-items: center;
   &__arrow {
-    margin-left: v.$padding;
+    color: black;
   }
   &__title {
     font-family: "shrikhand";
     margin: auto;
-    font-size: x-large;
+    font-size: xx-large;
+    margin-top: v.$padding * 0.5;
+    margin-bottom: v.$padding * 0.5;
   }
 }
 // # // bandeau visuel représentant le restaurant
@@ -25,6 +28,7 @@
 .menu--list {
   background-color: f.tint(v.$grey, 90%);
   margin-top: -4rem;
+
   border-radius: 2rem 2rem 0 0;
   z-index: 1;
   position: relative;
@@ -40,6 +44,7 @@
   &__title {
     font-family: "shrikhand";
     font-size: x-large;
+    margin-left: v.$padding;
   }
   &__heart {
     position: absolute;
@@ -50,12 +55,6 @@
   flex-direction: column;
   align-items: center;
 }
-
-// h1 {
-//   margin: 0;
-//   padding: 0 0 3px 0;
-//   white-space: nowrap;
-// }
 
 // # // Configuration des éléments du menu avec checkin animation
 .card {
@@ -68,6 +67,10 @@
   overflow: hidden;
   margin-bottom: v.$padding;
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
+  @media screen and (min-width: 768px) {
+    width: 400px;
+    height: 100px;
+  }
 }
 // # // Cadre text titre desc et prix
 .textContainer {
@@ -85,8 +88,9 @@
 }
 // # // Titre des sections du menu
 .title {
-  margin-bottom: v.$padding;
   position: relative;
+  margin-top: v.$padding;
+  margin-bottom: v.$padding * 2;
   &:after {
     content: "";
     position: absolute;
@@ -102,6 +106,9 @@
 h4 {
   padding-bottom: v.$padding * 0.3;
   padding-left: v.$padding * 0.3;
+  @media screen and (min-width: 768px) {
+    padding-left: v.$padding * 0.5;
+  }
 }
 // # // Description du produit
 p {
@@ -112,6 +119,11 @@ p {
   overflow: hidden;
   white-space: nowrap;
   font-size: smaller;
+  @media screen and (min-width: 768px) {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    padding-left: v.$padding * 0.5;
+  }
 }
 //# // prix du produit
 .price {
@@ -132,6 +144,9 @@ p {
   align-items: center;
   position: relative;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    height: 100px;
+  }
 
   & .custom-checkbox {
     height: 30px;
@@ -149,7 +164,7 @@ p {
     border: 3px dotted #ffffff;
     text-align: center;
     line-height: 30px;
-    transition: all 0.4s ease-in-out both;
+    // transition: all 0.4s ease-in-out both;
   }
   & .custom-checkbox-icon::before {
     content: "✔";
@@ -158,30 +173,3 @@ p {
     font-size: 1.5rem;
   }
 }
-
-// .checkbox .custom-checkbox {
-//   height: 30px;
-//   width: 30px;
-//   margin: 0;
-//   opacity: 0;
-//   cursor: pointer;
-// }
-
-// .checkbox .custom-checkbox-icon {
-//   height: 30px;
-//   width: 30px;
-//   position: absolute;
-//   pointer-events: none;
-//   border-radius: 50%;
-//   border: 3px dotted #ffffff;
-//   text-align: center;
-//   line-height: 30px;
-//   transition: all 0.4s ease-in-out both;
-// }
-
-// .checkbox .custom-checkbox-icon::before {
-//   content: "✔";
-//   color: #ffffff;
-//   font-weight: bold;
-//   font-size: 1.5rem;
-// }
