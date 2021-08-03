@@ -485,6 +485,13 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
 }
 .header--back__arrow {
   color: black;
+  margin-left: 0.5rem;
+  font-size: x-large;
+}
+@media screen and (min-width: 768px) {
+  .header--back__arrow {
+    font-size: smaller;
+  }
 }
 .header--back__title {
   font-family: "shrikhand";
