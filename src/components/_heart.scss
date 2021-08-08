@@ -18,14 +18,19 @@
 
 .heart--empty {
   transition: opacity 0.2s;
-  color: v.$color-secondary;
+  // color: v.$color-secondary;
+  color: rgba(0, 0, 0, 0.37);
 }
 
 .index__heart {
   position: absolute;
-  left: -2rem;
+  left: -3rem;
   top: 1rem;
-  font-size: larger;
+  // font-size: larger;
+  @media screen and (min-width: 768px) {
+    font-size: larger;
+    left: -2rem;
+  }
   
 }
 

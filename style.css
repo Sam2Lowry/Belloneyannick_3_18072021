@@ -94,14 +94,19 @@ body {
 
 .heart--empty {
   transition: opacity 0.2s;
-  color: #ff7ad9;
+  color: rgba(0, 0, 0, 0.37);
 }
 
 .index__heart {
   position: absolute;
-  left: -2rem;
+  left: -3rem;
   top: 1rem;
-  font-size: larger;
+}
+@media screen and (min-width: 768px) {
+  .index__heart {
+    font-size: larger;
+    left: -2rem;
+  }
 }
 
 .menu--list__heart {
@@ -450,7 +455,7 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 80%;
+  width: 90%;
 }
 
 .footer {
@@ -463,8 +468,8 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
   font-family: "shrikhand";
 }
 .footer__icon {
-  padding-right: 0.5rem;
-  font-size: x-large;
+  margin-right: 0.5rem;
+  font-size: large;
 }
 .footer__list {
   margin-top: 0.8rem;
@@ -480,6 +485,13 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
 }
 .header--back__arrow {
   color: black;
+  margin-left: 0.5rem;
+  font-size: x-large;
+}
+@media screen and (min-width: 768px) {
+  .header--back__arrow {
+    font-size: smaller;
+  }
 }
 .header--back__title {
   font-family: "shrikhand";

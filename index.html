@@ -52,9 +52,10 @@
     </div>
     <!-- LOGO ET GEOLOC -->
     <header class="header">
-      <h1 class="header__logo">
+      <a href="#"><h1 class="header__logo">
+      
         <img src="images/logo/ohmyfood.png" alt="ohmyfood" />
-      </h1>
+      </h1></a>
     </header>
     <main>
       <section class="geoloc">
@@ -71,7 +72,7 @@
         <p class="hero__sub">
           Découvrez des restaurants d'exception, <br> séléctionnés par nos soins
         </p>
-        <a href="#" class="hero__btn"> Explorer nos restaurants </a>
+        <a href="#restomiam" class="hero__btn"> Explorer nos restaurants </a>
       </section>
 
       <!-- FONCTIONNEMENT DU SITE -->
@@ -100,13 +101,13 @@
       </section>
 
       <!-- LISTE DE CHOIX DE RESTAURANTS AVEC NOUVEAUTES -->
-      <section class="restaurants">
+      <section class="restaurants" id="restomiam">
         <div class="container">
           <!-- CADRE GLOBAL -->
           <h2 class="restaurants__title">Restaurants</h2>
           <div class="restaurants__grid">
             <!-- CARD LA PALETTE DU GOUT -->
-            <a href="/la_palette_du_gout.html" class="rest--card">
+            <a href="la_palette_du_gout.html" class="rest--card">
               <div class="rest--card__imgcontainer">
                 <img
                   src="images/restaurants/la_palette_du_gout.jpg"
@@ -141,7 +142,7 @@
               </div>
             </a>
             <!-- CARD LA NOTE ENCHANTEE -->
-            <a href="/la_note_enchantee.html" class="rest--card">
+            <a href="la_note_enchantee.html" class="rest--card">
               <div class="rest--card__imgcontainer">
                 <img
                   src="images/restaurants/la_note_enchantee.jpg"
@@ -174,7 +175,7 @@
               </div>
             </a>
             <!-- CARD A LA FRANCAISE -->
-            <a href="/a_la_francaise.html" class="rest--card">
+            <a href="a_la_francaise.html" class="rest--card">
               <div class="rest--card__imgcontainer">
                 <img
                   src="images/restaurants/a_la_francaise.jpg"
@@ -206,7 +207,7 @@
               </div>
             </a>
             <!-- CARD LE DELICE DES SENS -->
-            <a href="/le_delice_des_sens.html" class="rest--card">
+            <a href="le_delice_des_sens.html" class="rest--card">
               <div class="rest--card__imgcontainer">
                 <img
                   src="images/restaurants/le_delice_des_sens.jpg"
@@ -239,6 +240,7 @@
             </a>
           </div>
         </div>
+        <!-- GRADIENT FILL HEART -->
         <svg width="0" height="0">
           <linearGradient id="lgrad" x1="100%" y1="100%" x2="0%" y2="0%">
             <stop
@@ -253,7 +255,7 @@
         </svg>
       </section>
     </main>
-    <!-- GRADIENT FILL HEART -->
+    
 
     <!-- FOOTER DE LA PAGE -->
     <footer class="footer">
@@ -262,7 +264,7 @@
         <ul class="footer__list">
           <li class="footer__list__elmt">
             <a class="footer__link" href="#"
-              ><i class="footer__icon fas fa-utensils"></i>Proposer un
+              ><i class="footer__icon fas fa-utensils"></i>&nbsp;Proposer un
               restaurant</a
             >
           </li>

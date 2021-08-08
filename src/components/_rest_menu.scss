@@ -8,6 +8,11 @@
   align-items: center;
   &__arrow {
     color: black;
+    margin-left: v.$padding * 0.5;
+    font-size:x-large;
+     @media screen and (min-width: 768px) {
+       font-size: smaller;
+     }
   }
   &__title {
     font-family: "shrikhand";
