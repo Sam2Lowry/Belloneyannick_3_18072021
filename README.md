@@ -49,7 +49,7 @@ leur mise en page est libre.
 
 Vous trouvez les maquettes du site dans votre boîte mail, envoyées par Fanny.
 
-![Maquette accueil fanny](src/maquettes/Accueil.png)
-![Maquette menu fanny](src/maquettes/Menu.png)
+![Maquette accueil fanny](briefing/maquettes/Accueil.png)
+![Maquette menu fanny](briefing/maquettes/Menu.png)
 
 
