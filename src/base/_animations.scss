@@ -19,15 +19,15 @@
 
 // # // Animation bandeau nouveauté
 
-.rest--card__new--rest {
-  animation: blink 1.5s ease-in-out reverse infinite;
-}
+// .rest--card__new--rest {
+//   animation: blink 1.5s ease-in-out reverse infinite;
+// }
 
-@keyframes blink {
-  to {
-    opacity: 0.3;
-  }
-}
+// @keyframes blink {
+//   to {
+//     opacity: 0.3;
+//   }
+// }
 
 // # // Loader animation
 

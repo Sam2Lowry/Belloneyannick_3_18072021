@@ -50,7 +50,8 @@
       border-radius: 10px;
       box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
       &:hover {
-        background-color: f.tint(v.$color-primary, 90%);
+        background-color: f.tint(v.$color-primary, 80%);
+        color:v.$color-primary ;
         cursor: pointer;
       }
       &:before {
@@ -70,10 +71,15 @@
       &__desc {
         font-size: medium;
         margin: auto;
+        color: black;
       }
-      &__icon {
-        color: f.shade(v.$grey, 20%);
-      }
+      // &__icon {
+      //   color: f.shade(v.$grey, 20%);
+
+        // &:hover {
+        //   color:v.$color-primary ;
+        //}
+      // }
     }
   }
 }

@@ -1,4 +1,5 @@
 @use '../utils/variables' as v;
+@use '../utils/functions' as f;
 %rest--card {
   .rest--card {
     display: flex;
@@ -13,7 +14,7 @@
       position: absolute ;
       right: 1%;
       top: 5%;
-      color: black;
+      color: f.shade(v.$color-tertiary, 30%);
       padding: 5px 5px 5px 5px ;
       background-color: v.$color-tertiary;
     }
