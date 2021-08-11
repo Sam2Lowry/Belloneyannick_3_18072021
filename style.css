@@ -48,9 +48,11 @@ body {
   position: absolute;
   right: 1%;
   top: 5%;
-  color: black;
-  padding: 5px 5px 5px 5px;
+  color: #4c7168;
+  padding: 5px 10px 5px 10px;
   background-color: #98e2cf;
+  border-radius: 2px;
+  font-weight: bold;
 }
 .restaurants .rest--card__img {
   object-fit: cover;
@@ -131,15 +133,6 @@ body {
   }
   100% {
     transform: scale(1.1);
-  }
-}
-.rest--card__new--rest {
-  animation: blink 1.5s ease-in-out reverse infinite;
-}
-
-@keyframes blink {
-  to {
-    opacity: 0.3;
   }
 }
 @keyframes fade--out {
@@ -276,7 +269,8 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
   box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.199);
 }
 .guide__list__step:hover {
-  background-color: #f4eefc;
+  background-color: #e9ddf8;
+  color: #9256dc;
   cursor: pointer;
 }
 .guide__list__step:before {
@@ -298,9 +292,7 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
 .guide__list__step__desc {
   font-size: medium;
   margin: auto;
-}
-.guide__list__step__icon {
-  color: #666666;
+  color: black;
 }
 
 .front--load {
