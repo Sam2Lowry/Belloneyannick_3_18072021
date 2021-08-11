@@ -14,9 +14,11 @@
       position: absolute ;
       right: 1%;
       top: 5%;
-      color: f.shade(v.$color-tertiary, 30%);
-      padding: 5px 5px 5px 5px ;
+      color: f.shade(v.$color-tertiary, 50%);
+      padding: 5px 10px 5px 10px ;
       background-color: v.$color-tertiary;
+      border-radius: 2px;
+      font-weight: bold;
     }
 
     &__img {
