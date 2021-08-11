@@ -450,6 +450,16 @@ checkbox .custom-checkbox:checked ~ .custom-checkbox-icon {
   width: 90%;
 }
 
+.top {
+  stop-color: #9256dc;
+  stop-opacity: 1;
+}
+
+.bottom {
+  stop-color: #ff7ad9;
+  stop-opacity: 1;
+}
+
 .footer {
   display: flex;
   background-color: #1a1a1a;

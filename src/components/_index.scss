@@ -98,6 +98,16 @@
   @extend %rest--card;
 }
 
+.top {
+  stop-color: rgb(146, 86, 220);
+  stop-opacity: 1;
+}
+
+.bottom {
+  stop-color: rgb(255, 122, 217);
+  stop-opacity: 1;
+}
+
 .footer {
   display: flex;
   background-color: f.shade(v.$grey, 80%);
@@ -110,7 +120,6 @@
   &__icon {
     margin-right: v.$padding * 0.5;
     font-size: large;
-    
   }
   &__list {
     margin-top: v.$padding * 0.8;
