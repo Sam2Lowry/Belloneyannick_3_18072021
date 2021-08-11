@@ -166,14 +166,15 @@ p {
     position: absolute;
     pointer-events: none;
     border-radius: 50%;
-    border: 3px dotted #ffffff;
+    // border: 3px dotted #ffffff;
+    background-color: white;
     text-align: center;
     line-height: 30px;
     // transition: all 0.4s ease-in-out both;
   }
   & .custom-checkbox-icon::before {
     content: "✔";
-    color: #ffffff;
+    color: v.$color-tertiary;
     font-weight: bold;
     font-size: 1.5rem;
   }

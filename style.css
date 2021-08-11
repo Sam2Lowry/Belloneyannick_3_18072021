@@ -638,13 +638,13 @@ p {
   position: absolute;
   pointer-events: none;
   border-radius: 50%;
-  border: 3px dotted #ffffff;
+  background-color: white;
   text-align: center;
   line-height: 30px;
 }
 .checkbox .custom-checkbox-icon::before {
   content: "✔";
-  color: #ffffff;
+  color: #98e2cf;
   font-weight: bold;
   font-size: 1.5rem;
 }
